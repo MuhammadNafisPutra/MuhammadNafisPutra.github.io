@@ -17,6 +17,15 @@ nav.addEventListener('click', (e) => {
 
 $('#year').textContent = new Date().getFullYear();
 
+/* jam Banjarmasin (WITA) */
+const clock = $('#clock');
+if (clock) {
+  const fmt = new Intl.DateTimeFormat('id-ID', { timeZone: 'Asia/Makassar', hour: '2-digit', minute: '2-digit' });
+  const tick = () => { clock.textContent = `pukul ${fmt.format(new Date())}`; };
+  tick();
+  setInterval(tick, 15000);
+}
+
 /* progres gulir + garis header */
 const header = $('.top');
 const bar = $('.progress');
@@ -40,7 +49,7 @@ if (words.length > 1 && !calm) {
     const next = words[i];
     cur.classList.remove('is-on');
     cur.classList.add('is-out');
-    setTimeout(() => cur.classList.remove('is-out'), 450);
+    setTimeout(() => cur.classList.remove("is-out"), 320);
     next.classList.add('is-on');
   }, 2600);
 }
