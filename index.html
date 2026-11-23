@@ -81,208 +81,151 @@
     </div>
   </section>
 
-  <!-- ============ INDEX ============ -->
-  <section class="index" id="karya" aria-labelledby="karya-h">
+  <!-- ============ KARYA (semua proyek dalam satu grid) ============ -->
+  <section class="work" id="karya" aria-labelledby="karya-h">
     <div class="wrap">
       <header class="head">
         <h2 id="karya-h" class="head__title">Karya</h2>
-        <p class="head__note">Delapan proyek: aplikasi, sistem data, situs, dan desain UI. Arahkan kursor untuk mengintip, klik untuk membaca ceritanya.</p>
+        <p class="head__note">Delapan proyek dari aplikasi, data, web, sampai desain UI. Pilih kategori untuk menyaring.</p>
       </header>
 
-      <ol class="plist">
-        <li><a href="#p-scent" data-peek="assets/img/scent-pencarian.webp" data-tall><span class="plist__no">01</span><span class="plist__t">ScentApp</span><span class="plist__c">Android · Kotlin</span><span class="plist__y">2026</span></a></li>
-        <li><a href="#p-bangunan" data-peek="assets/img/bangunan.webp"><span class="plist__no">02</span><span class="plist__t">Bangunan Banjarmasin</span><span class="plist__c">Visualisasi data</span><span class="plist__y">2026</span></a></li>
-        <li><a href="#p-fitzone" data-peek="assets/img/fitzone.webp"><span class="plist__no">03</span><span class="plist__t">FitZone Data Warehouse</span><span class="plist__c">Big data · BI</span><span class="plist__y">2026</span></a></li>
-        <li><a href="#p-commitin" data-peek="assets/img/commitin-pelamar.webp"><span class="plist__no">04</span><span class="plist__t">CommitIn</span><span class="plist__c">Web · Laravel</span><span class="plist__y">2026</span></a></li>
-        <li><a href="#p-barter" data-peek="assets/img/barterskill.webp"><span class="plist__no">05</span><span class="plist__t">BarterSkill</span><span class="plist__c">Desktop · JavaFX</span><span class="plist__y">2025</span></a></li>
-        <li><a href="#lainnya" data-peek="assets/img/priotify.webp"><span class="plist__no">06</span><span class="plist__t">Priotify</span><span class="plist__c">Desain UI · Figma</span><span class="plist__y">2025</span></a></li>
-        <li><a href="#lainnya" data-peek="assets/img/wefly.webp"><span class="plist__no">07</span><span class="plist__t">We Fly</span><span class="plist__c">Web · HTML CSS JS</span><span class="plist__y">2025</span></a></li>
-        <li><a href="#lainnya" data-peek="assets/img/mielegenda.webp"><span class="plist__no">08</span><span class="plist__t">Mie Legenda</span><span class="plist__c">Landing page</span><span class="plist__y">2025</span></a></li>
-      </ol>
-    </div>
-    <div class="peek" aria-hidden="true"><img alt=""></div>
-  </section>
-
-  <!-- ============ CASES ============ -->
-
-  <!-- 01 ScentApp -->
-  <article class="case case--wine" id="p-scent" aria-labelledby="t-scent">
-    <div class="wrap">
-      <header class="case__head">
-        <span class="case__no" aria-hidden="true">01</span>
-        <div>
-          <p class="mono">Pemrograman Mobile · Feb–Jun 2026 · Tim 2 orang</p>
-          <h3 id="t-scent" class="case__title">ScentApp</h3>
-        </div>
-      </header>
-      <div class="case__media case__media--phones">
-        <img src="assets/img/scent-penjualan.webp" width="520" height="1156" loading="lazy" alt="ScentApp: halaman penjual berisi pendapatan dan pesanan masuk">
-        <img src="assets/img/scent-pencarian.webp" width="520" height="1156" loading="lazy" alt="ScentApp: pencarian parfum dengan filter profil aroma">
-        <img src="assets/img/scent-pengiriman.webp" width="520" height="1156" loading="lazy" alt="ScentApp: pilihan kurir dan metode pembayaran">
+      <div class="filters" role="group" aria-label="Saring proyek">
+        <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">Semua <sup>8</sup></button>
+        <button type="button" class="filter" data-filter="app" aria-pressed="false">Aplikasi <sup>2</sup></button>
+        <button type="button" class="filter" data-filter="data" aria-pressed="false">Data <sup>2</sup></button>
+        <button type="button" class="filter" data-filter="web" aria-pressed="false">Web <sup>3</sup></button>
+        <button type="button" class="filter" data-filter="design" aria-pressed="false">Desain <sup>1</sup></button>
       </div>
-      <div class="case__body">
-        <p class="case__lead">Marketplace khusus parfum. Pembeli mencari wangi berdasarkan <em>notes</em> aroma, belanja lewat keranjang, mengunggah bukti transfer, lalu melacak resi. Penjual mengelola produk dan pesanan, dan stok berubah di layar saat itu juga lewat Firestore.</p>
-        <div class="case__side">
-          <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>MVVM</li><li>Room</li><li>Retrofit</li><li>Firebase</li></ul>
-          <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/SCENT" target="_blank" rel="noopener">Lihat kode ↗</a></div>
-        </div>
-      </div>
-    </div>
-  </article>
 
-  <!-- 02 Bangunan -->
-  <article class="case case--crimson" id="p-bangunan" aria-labelledby="t-bangunan">
-    <div class="wrap">
-      <header class="case__head">
-        <span class="case__no" aria-hidden="true">02</span>
-        <div>
-          <p class="mono">UAS Visualisasi Data · 2026</p>
-          <h3 id="t-bangunan" class="case__title">Kondisi Bangunan Banjarmasin</h3>
-        </div>
-      </header>
-      <div class="case__split">
-        <figure class="case__media case__media--card">
-          <img src="assets/img/bangunan.webp" width="1200" height="980" loading="lazy" alt="Poster analisis kondisi bangunan Kota Banjarmasin: 148 dari 193 bangunan rusak yang masih dihuni berdinding kayu">
-        </figure>
-        <div class="case__body case__body--stack">
-          <p class="case__big"><b>148</b> dari 193 bangunan rusak yang masih dihuni berdinding kayu.</p>
-          <p class="case__lead">Dari survei lapangan 1.016 bangunan di lima kecamatan, saya membuat dashboard, peta 3D interaktif, dan poster A3. Temuan itu saya ubah jadi rekomendasi: dahulukan pemeriksaan kebakaran di Banjarmasin Barat dan Utara.</p>
-          <ul class="tags"><li>Python</li><li>pandas</li><li>Plotly</li><li>Streamlit</li><li>MapLibre GL</li></ul>
-          <div class="links">
-            <a class="link" href="https://dashboard-bangunan-banjarmasin.streamlit.app/" target="_blank" rel="noopener">Buka dashboard ↗</a>
-            <a class="link" href="https://muhammadnafisputra.github.io/visualisasi-data-bangunan/peta-3d/" target="_blank" rel="noopener">Peta 3D ↗</a>
-            <a class="link" href="https://github.com/MuhammadNafisPutra/visualisasi-data-bangunan" target="_blank" rel="noopener">Kode ↗</a>
+      <ul class="grid">
+
+        <!-- 01 ScentApp -->
+        <li class="proj proj--main" data-cat="app" id="p-scent">
+          <figure class="proj__media proj__media--phones">
+            <img src="assets/img/scent-penjualan.webp" width="520" height="1156" loading="lazy" alt="ScentApp: halaman penjual berisi pendapatan dan pesanan masuk">
+            <img src="assets/img/scent-pencarian.webp" width="520" height="1156" loading="lazy" alt="ScentApp: pencarian parfum dengan filter profil aroma">
+            <img src="assets/img/scent-pengiriman.webp" width="520" height="1156" loading="lazy" alt="ScentApp: pilihan kurir dan metode pembayaran">
+          </figure>
+          <div class="proj__body">
+            <p class="mono proj__meta"><b>01</b> Android · Pemrograman Mobile · 2026 · Tim 2 orang</p>
+            <h3>ScentApp</h3>
+            <p>Marketplace parfum. Pembeli mencari wangi berdasarkan <em>notes</em> aroma, belanja lewat keranjang, mengunggah bukti transfer, dan melacak resi. Stok berubah di layar saat itu juga lewat Firestore.</p>
+            <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>MVVM</li><li>Room</li><li>Firebase</li></ul>
+            <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/SCENT" target="_blank" rel="noopener">Lihat kode ↗</a></div>
           </div>
-        </div>
-      </div>
-    </div>
-  </article>
+        </li>
 
-  <!-- 03 FitZone -->
-  <article class="case case--cream" id="p-fitzone" aria-labelledby="t-fitzone">
-    <div class="wrap">
-      <header class="case__head">
-        <span class="case__no" aria-hidden="true">03</span>
-        <div>
-          <p class="mono">UAS Kecerdasan Bisnis · 2026</p>
-          <h3 id="t-fitzone" class="case__title">FitZone Data Warehouse</h3>
-        </div>
-      </header>
-      <figure class="case__media case__media--browser">
-        <span class="case__bar" aria-hidden="true"><em>fitzone · dashboard streamlit</em></span>
-        <img src="assets/img/fitzone.webp" width="1440" height="920" loading="lazy" alt="Dashboard FitZone halaman Ringkasan Eksekutif: 973 member, rata-rata lemak tubuh 25 persen, dan grafik lemak tubuh menurut frekuensi latihan">
-      </figure>
-      <div class="case__body">
-        <p class="case__lead">Sistem BI untuk jaringan gym fiktif PT FitZone Nusantara. Dashboard enam halaman menjawab pertanyaan bisnis seperti member mana yang paling berisiko berhenti. Di baliknya ada data warehouse yang saya bangun dari nol.</p>
-        <div class="case__side">
-          <ul class="tags"><li>Python</li><li>Apache Airflow</li><li>PostgreSQL</li><li>Streamlit</li><li>Docker</li><li>scikit-learn</li></ul>
-          <div class="links">
-            <a class="link" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis" target="_blank" rel="noopener">Lihat kode ↗</a>
-            <a class="link" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis/blob/main/docs/gambar/e24_star_schema.png" target="_blank" rel="noopener">Star schema ↗</a>
+        <!-- 02 Bangunan -->
+        <li class="proj proj--main" data-cat="data" id="p-bangunan">
+          <figure class="proj__media">
+            <img src="assets/img/bangunan.webp" width="1200" height="980" loading="lazy" alt="Poster analisis kondisi bangunan Kota Banjarmasin: 148 dari 193 bangunan rusak yang masih dihuni berdinding kayu">
+          </figure>
+          <div class="proj__body">
+            <p class="mono proj__meta"><b>02</b> Visualisasi data · UAS Visualisasi Data · 2026</p>
+            <h3>Kondisi Bangunan Banjarmasin</h3>
+            <p>Survei lapangan 1.016 bangunan di lima kecamatan, diolah menjadi dashboard, peta 3D interaktif, dan poster A3. Temuan utamanya: 148 dari 193 bangunan rusak yang masih dihuni berdinding kayu.</p>
+            <ul class="tags"><li>Python</li><li>pandas</li><li>Plotly</li><li>Streamlit</li><li>MapLibre GL</li></ul>
+            <div class="links">
+              <a class="link" href="https://dashboard-bangunan-banjarmasin.streamlit.app/" target="_blank" rel="noopener">Dashboard ↗</a>
+              <a class="link" href="https://muhammadnafisputra.github.io/visualisasi-data-bangunan/peta-3d/" target="_blank" rel="noopener">Peta 3D ↗</a>
+              <a class="link" href="https://github.com/MuhammadNafisPutra/visualisasi-data-bangunan" target="_blank" rel="noopener">Kode ↗</a>
+            </div>
           </div>
-        </div>
-      </div>
+        </li>
 
-      <div class="flow">
-        <p class="mono flow__label">Cara saya membangun data warehouse-nya</p>
-        <ol class="flow__steps">
-          <li><b>Sumber</b><span>CSV kebiasaan latihan member (harian) dan WHO Global Health Observatory API (bulanan).</span></li>
-          <li><b>Data lake</b><span>File asli di <em>raw zone</em> dengan checksum dan manifest; hasil bersih di <em>curated zone</em> sebagai parquet.</span></li>
-          <li><b>Quality gate</b><span>16 aturan validasi di staging. Batch berhenti bila lebih dari 5% baris ditolak, dan setiap penolakan dicatat.</span></li>
-          <li><b>Star schema</b><span>7 dimensi dan 3 fakta di PostgreSQL, dimuat dalam satu transaksi beserta rekonsiliasi jumlah baris.</span></li>
-          <li><b>Data mart</b><span><em>View</em> dan <em>materialized view</em> per kebutuhan bisnis, menjadi sumber dashboard.</span></li>
-          <li><b>Otomasi</b><span>Tiga DAG Airflow, log audit per tahap, backup, dan model Random Forest untuk prediksi lemak tubuh.</span></li>
-        </ol>
-      </div>
-    </div>
-  </article>
+        <!-- 03 FitZone -->
+        <li class="proj proj--wide" data-cat="data" id="p-fitzone">
+          <figure class="proj__media">
+            <img src="assets/img/fitzone.webp" width="1440" height="920" loading="lazy" alt="Dashboard FitZone halaman Ringkasan Eksekutif: 973 member, rata-rata lemak tubuh 25 persen, dan grafik lemak tubuh menurut frekuensi latihan">
+          </figure>
+          <div class="proj__body">
+            <p class="mono proj__meta"><b>03</b> Big data · UAS Kecerdasan Bisnis · 2026</p>
+            <h3>FitZone Data Warehouse</h3>
+            <p>Sistem BI untuk jaringan gym fiktif PT FitZone Nusantara: dashboard enam halaman yang menjawab pertanyaan bisnis, dengan data warehouse yang saya bangun dari nol di baliknya.</p>
+            <ul class="tags"><li>Python</li><li>Apache Airflow</li><li>PostgreSQL</li><li>Streamlit</li><li>Docker</li></ul>
+            <details class="dw">
+              <summary>Cara saya membangun data warehouse-nya</summary>
+              <ol>
+                <li><b>Sumber.</b> CSV latihan member (harian) dan WHO Global Health Observatory API (bulanan).</li>
+                <li><b>Data lake.</b> File asli di <em>raw zone</em> dengan checksum; hasil bersih di <em>curated zone</em> sebagai parquet.</li>
+                <li><b>Quality gate.</b> 16 aturan validasi; batch berhenti bila lebih dari 5% baris ditolak.</li>
+                <li><b>Star schema.</b> 7 dimensi dan 3 fakta di PostgreSQL, dimuat dalam satu transaksi dengan rekonsiliasi.</li>
+                <li><b>Data mart.</b> <em>View</em> dan <em>materialized view</em> sebagai sumber dashboard.</li>
+                <li><b>Otomasi.</b> Tiga DAG Airflow, log audit, backup, dan model Random Forest.</li>
+              </ol>
+            </details>
+            <div class="links">
+              <a class="link" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis" target="_blank" rel="noopener">Lihat kode ↗</a>
+              <a class="link" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis/blob/main/docs/gambar/e24_star_schema.png" target="_blank" rel="noopener">Star schema ↗</a>
+            </div>
+          </div>
+        </li>
 
-  <!-- 04 CommitIn -->
-  <article class="case case--blush" id="p-commitin" aria-labelledby="t-commitin">
-    <div class="wrap">
-      <header class="case__head">
-        <span class="case__no" aria-hidden="true">04</span>
-        <div>
-          <p class="mono">UAS Pemrograman Web · 2026 · Prototipe antarmuka</p>
-          <h3 id="t-commitin" class="case__title">CommitIn</h3>
-        </div>
-      </header>
-      <figure class="case__media case__media--browser">
-        <span class="case__bar" aria-hidden="true"><em>commitin · dashboard pelamar</em></span>
-        <img src="assets/img/commitin-pelamar.webp" width="1440" height="900" loading="lazy" alt="CommitIn: dashboard pelamar dengan status lamaran dan jadwal wawancara">
-      </figure>
-      <div class="case__body">
-        <p class="case__lead">Platform rekrutmen kepanitiaan kampus. Mahasiswa mencari lowongan BEM, HIMA, dan panitia acara lalu memantau lamarannya tahap demi tahap; penyelenggara menyaring pelamar dan mengelola lowongan.</p>
-        <div class="case__side">
-          <ul class="tags"><li>Laravel 12</li><li>Blade</li><li>Tailwind CSS</li></ul>
-          <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/CommitIn" target="_blank" rel="noopener">Lihat kode ↗</a></div>
-        </div>
-      </div>
-    </div>
-  </article>
+        <!-- 04 CommitIn -->
+        <li class="proj proj--main" data-cat="web" id="p-commitin">
+          <figure class="proj__media">
+            <img src="assets/img/commitin-pelamar.webp" width="1440" height="900" loading="lazy" alt="CommitIn: dashboard pelamar dengan status lamaran dan jadwal wawancara">
+          </figure>
+          <div class="proj__body">
+            <p class="mono proj__meta"><b>04</b> Web · UAS Pemrograman Web · 2026</p>
+            <h3>CommitIn</h3>
+            <p>Prototipe platform rekrutmen kepanitiaan kampus: mahasiswa mencari lowongan BEM, HIMA, dan panitia acara, lalu memantau lamarannya tahap demi tahap.</p>
+            <ul class="tags"><li>Laravel 12</li><li>Blade</li><li>Tailwind CSS</li></ul>
+            <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/CommitIn" target="_blank" rel="noopener">Lihat kode ↗</a></div>
+          </div>
+        </li>
 
-  <!-- 05 BarterSkill -->
-  <article class="case case--ink" id="p-barter" aria-labelledby="t-barter">
-    <div class="wrap">
-      <header class="case__head">
-        <span class="case__no" aria-hidden="true">05</span>
-        <div>
-          <p class="mono">UAS Pemrograman 2 · Des 2025</p>
-          <h3 id="t-barter" class="case__title">BarterSkill</h3>
-        </div>
-      </header>
-      <figure class="case__media case__media--browser">
-        <span class="case__bar" aria-hidden="true"><em>barterskill · javafx</em></span>
-        <img src="assets/img/barterskill.webp" width="1440" height="900" loading="lazy" alt="BarterSkill: dashboard berisi postingan Offer dan Request keahlian">
-      </figure>
-      <div class="case__body">
-        <p class="case__lead">Mahasiswa bertukar keahlian tanpa uang: desain logo ditukar les Java, fotografi ditukar terjemahan. Setiap postingan berupa <em>Offer</em> atau <em>Request</em>, dan pemilik postingan memutuskan menerima atau menolak barter.</p>
-        <div class="case__side">
-          <ul class="tags"><li>Java</li><li>JavaFX</li><li>MySQL</li><li>JDBC</li><li>Maven</li></ul>
-          <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/BarterSkill" target="_blank" rel="noopener">Lihat kode ↗</a></div>
-        </div>
-      </div>
-    </div>
-  </article>
+        <!-- 05 BarterSkill -->
+        <li class="proj proj--main" data-cat="app" id="p-barter">
+          <figure class="proj__media">
+            <img src="assets/img/barterskill.webp" width="1440" height="900" loading="lazy" alt="BarterSkill: dashboard berisi postingan Offer dan Request keahlian">
+          </figure>
+          <div class="proj__body">
+            <p class="mono proj__meta"><b>05</b> Desktop · UAS Pemrograman 2 · Des 2025</p>
+            <h3>BarterSkill</h3>
+            <p>Mahasiswa bertukar keahlian tanpa uang. Postingan berupa <em>Offer</em> atau <em>Request</em>, dan pemilik postingan menerima atau menolak tawaran barter.</p>
+            <ul class="tags"><li>Java</li><li>JavaFX</li><li>MySQL</li><li>Maven</li></ul>
+            <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/BarterSkill" target="_blank" rel="noopener">Lihat kode ↗</a></div>
+          </div>
+        </li>
 
-  <!-- ============ LAINNYA ============ -->
-  <section class="more" id="lainnya" aria-labelledby="lain-h">
-    <div class="wrap">
-      <header class="head head--light">
-        <h2 id="lain-h" class="head__title">Lainnya</h2>
-        <p class="head__note">Proyek UAS yang lebih kecil dan satu desain UI.</p>
-      </header>
-      <ul class="cards">
-        <li class="card">
-          <div class="card__shots">
+        <!-- 06 Priotify -->
+        <li class="proj proj--small" data-cat="design" id="p-priotify">
+          <figure class="proj__media proj__media--swap">
             <img src="assets/img/priotify.webp" width="1440" height="900" loading="lazy" alt="Priotify: landing page bertuliskan Master Your Academy Chaos">
             <img src="assets/img/priotify-home.webp" width="1440" height="900" loading="lazy" alt="Priotify: dashboard progres harian dan tugas jatuh tempo">
-          </div>
-          <div class="card__body">
-            <p class="mono">Interaksi Manusia dan Komputer · 2025</p>
+          </figure>
+          <div class="proj__body">
+            <p class="mono proj__meta"><b>06</b> Desain UI · IMK · 2025</p>
             <h3>Priotify</h3>
-            <p>Desain UI aplikasi pengatur prioritas belajar: progres harian, tugas, jadwal, pengingat, dan learning hub, lengkap dengan prototipe interaktif di Figma.</p>
+            <p>Desain UI dan prototipe interaktif aplikasi pengatur prioritas belajar di Figma.</p>
           </div>
         </li>
-        <li class="card">
-          <a href="https://github.com/MuhammadNafisPutra/WeFly" target="_blank" rel="noopener">
-            <div class="card__shots"><img src="assets/img/wefly.webp" width="1440" height="900" loading="lazy" alt="We Fly: hero dengan foto pesawat dan formulir pencarian penerbangan"></div>
-            <div class="card__body">
-              <p class="mono">UAS Pemrograman Web · 2025</p>
-              <h3>We Fly <span aria-hidden="true">↗</span></h3>
-              <p>Situs pemesanan tiket pesawat: pencarian penerbangan, formulir pemesanan, dan destinasi promo, dengan CSS yang ditulis sendiri.</p>
-            </div>
-          </a>
+
+        <!-- 07 We Fly -->
+        <li class="proj proj--small" data-cat="web" id="p-wefly">
+          <figure class="proj__media">
+            <img src="assets/img/wefly.webp" width="1440" height="900" loading="lazy" alt="We Fly: hero dengan foto pesawat dan formulir pencarian penerbangan">
+          </figure>
+          <div class="proj__body">
+            <p class="mono proj__meta"><b>07</b> Web · UAS Pemrograman Web · 2025</p>
+            <h3>We Fly</h3>
+            <p>Situs pemesanan tiket pesawat dengan CSS yang ditulis sendiri.</p>
+            <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/WeFly" target="_blank" rel="noopener">Lihat kode ↗</a></div>
+          </div>
         </li>
-        <li class="card">
-          <a href="https://github.com/MuhammadNafisPutra/Mie-Legenda" target="_blank" rel="noopener">
-            <div class="card__shots"><img src="assets/img/mielegenda.webp" width="1440" height="900" loading="lazy" alt="Mie Legenda: hero dengan foto semangkuk mie ayam"></div>
-            <div class="card__body">
-              <p class="mono">UAS Kewirausahaan · 2025</p>
-              <h3>Mie Legenda <span aria-hidden="true">↗</span></h3>
-              <p>Landing page usaha mie ayam di Banjarmasin: menu dengan filter, pesan online, dan pemesanan lewat WhatsApp.</p>
-            </div>
-          </a>
+
+        <!-- 08 Mie Legenda -->
+        <li class="proj proj--small" data-cat="web" id="p-mie">
+          <figure class="proj__media">
+            <img src="assets/img/mielegenda.webp" width="1440" height="900" loading="lazy" alt="Mie Legenda: hero dengan foto semangkuk mie ayam">
+          </figure>
+          <div class="proj__body">
+            <p class="mono proj__meta"><b>08</b> Web · UAS Kewirausahaan · 2025</p>
+            <h3>Mie Legenda</h3>
+            <p>Landing page responsif usaha mie ayam, dengan pemesanan lewat WhatsApp.</p>
+            <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/Mie-Legenda" target="_blank" rel="noopener">Lihat kode ↗</a></div>
+          </div>
         </li>
       </ul>
     </div>

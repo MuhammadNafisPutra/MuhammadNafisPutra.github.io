@@ -11,12 +11,12 @@ instalasi atau build. Buka `index.html` di browser untuk melihatnya.
 
 ## Mengubah konten
 
-Semua teks ada di `index.html`, dikelompokkan per bagian (HERO, INDEX, CASES, LAINNYA, TENTANG, RUNDOWN, SERTIFIKAT, KONTAK).
+Semua teks ada di `index.html`, dikelompokkan per bagian (HERO, KARYA, TENTANG, RUNDOWN, SERTIFIKAT, KONTAK).
 Warna dan huruf diatur di bagian atas `style.css` (`--wine`, `--crimson`, `--gold`, `--display`, dll.).
 
-Menambah proyek utama: salin satu blok `<article class="case ...">` dan tambahkan barisnya di daftar
-`<ol class="plist">` (atribut `data-peek` berisi gambar yang muncul saat kursor diarahkan).
-Semua proyek memakai gaya yang sama; cukup ganti teks, gambar, dan link-nya.
+Menambah proyek: salin satu blok `<li class="proj ...">` di dalam `<ul class="grid">`.
+- `proj--main` = kartu besar (2 per baris), `proj--small` = kartu kecil (3 per baris), `proj--wide` = selebar halaman.
+- `data-cat` menentukan kategori filter: `app`, `data`, `web`, atau `design`. Perbarui angka kecil di tombol filter.
 
 ## Menerbitkan gratis lewat GitHub Pages
 
