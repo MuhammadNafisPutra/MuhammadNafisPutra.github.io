@@ -117,11 +117,14 @@ em { font-style: italic; }
 
 
 
-.cover__role { max-width: 26em; margin-top: 18px; font: 400 clamp(22px, 2.1vw, 28px)/1.35 var(--display); letter-spacing: -.005em; color: var(--cream); }
-.cover__role b { font-weight: 400; background: var(--g-gold); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; }
 
-.cover__lede { max-width: 33em; margin-top: 16px; color: var(--soft); font-size: 17px; }
+.cover__lede { max-width: 33em; margin-top: 22px; color: var(--soft); font-size: 17px; }
 .cover__lede em { color: var(--cream); }
+.skills { display: grid; grid-template-columns: repeat(4, auto); justify-content: start; gap: 0; margin-top: 26px; }
+.skills > div { padding: 2px 22px; border-left: 1px solid var(--line); }
+.skills > div:first-child { padding-left: 0; border-left: 0; }
+.skills dt { margin-bottom: 6px; font: 600 13px var(--sans); color: var(--gold-2); }
+.skills dd { margin: 0; color: var(--soft); font-size: 14.5px; line-height: 1.7; white-space: nowrap; }
 .cover__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .cover__social { display: flex; gap: 8px; margin-top: 22px; }
 .cover__social a { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--cream); transition: background .25s, color .25s, border-color .25s, transform .3s var(--ease); }
@@ -304,11 +307,12 @@ em { font-style: italic; }
   .filters { display: flex; }
 }
 @media (max-width: 640px) {
+  .skills { grid-template-columns: 1fr 1fr; row-gap: 18px; }
+  .skills > div:nth-child(3) { padding-left: 0; border-left: 0; }
   .step__card { padding: 18px 18px 20px; }
   body { font-size: 16px; }
   .masthead { font-size: clamp(96px, 32vw, 150px); }
-    .cover__role { font-size: 21px; }
-  .certgrid { grid-template-columns: 1fr; }
+      .certgrid { grid-template-columns: 1fr; }
   .cert, .cert--wide { grid-column: 1 / -1; }
   .stats { gap: 8px; }
   .stats dd { font-size: 38px; }
@@ -330,9 +334,7 @@ em { font-style: italic; }
   .masthead .line:nth-child(1) > span { animation-delay: .1s; }
   .masthead .line:nth-child(2) > span { animation-delay: .2s; }
   .cover__first { animation: fadeUp .8s var(--ease) .05s both; }
-  .cover__role, .cover__lede, .cover__actions, .cover__social { animation: fadeUp .9s var(--ease) both; }
-  .cover__role { animation-delay: .4s; }
-  .cover__lede { animation-delay: .5s; }
+      .cover__lede { animation-delay: .5s; }
   .cover__actions { animation-delay: .6s; }
   .cover__social { animation-delay: .7s; }
   .cover__frame img { animation: unveil 1.3s var(--ease) .3s both; }
