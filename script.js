@@ -30,6 +30,21 @@ const onScroll = () => {
 addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
 onScroll();
 
+/* kata yang berganti di bawah nama */
+const words = $$('.rotator__word');
+if (words.length > 1 && !calm) {
+  let i = 0;
+  setInterval(() => {
+    const cur = words[i];
+    i = (i + 1) % words.length;
+    const next = words[i];
+    cur.classList.remove('is-on');
+    cur.classList.add('is-out');
+    setTimeout(() => cur.classList.remove('is-out'), 450);
+    next.classList.add('is-on');
+  }, 2600);
+}
+
 /* angka statistik menghitung naik */
 if (!calm) {
   $$('.stats dd').forEach((el, i) => {
