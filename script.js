@@ -15,7 +15,6 @@ nav.addEventListener('click', (e) => {
   if (e.target.tagName === 'A' && nav.classList.contains('is-open')) menu.click();
 });
 
-$('#year').textContent = new Date().getFullYear();
 
 
 /* progres gulir + garis header */
