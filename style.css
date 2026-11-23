@@ -131,7 +131,7 @@ em { font-style: italic; }
 .cover__social a:hover { background: var(--gold); color: var(--ink); border-color: var(--gold); transform: translateY(-3px); }
 .cover__social svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
-.cover__photo { position: relative; justify-self: end; width: min(100%, 400px); margin-bottom: 26px; }
+.cover__photo { position: relative; justify-self: end; width: min(100%, 400px); margin: 0 16px 26px 0; }
 .cover__frame { position: relative; }
 .cover__frame::before { content: ""; position: absolute; inset: 16px -16px -16px 16px; border-radius: var(--r-lg); padding: 1px; background: linear-gradient(140deg, var(--gold-2), transparent 45%, var(--rose)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: .9; transition: transform .7s var(--ease); }
 .cover__frame img { position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 28%; border-radius: var(--r-lg); box-shadow: 0 40px 70px -35px rgba(0, 0, 0, .8); }
