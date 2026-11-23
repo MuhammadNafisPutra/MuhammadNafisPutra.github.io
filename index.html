@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Muhammad Nafis Putra</title>
-  <meta name="description" content="Portofolio Muhammad Nafis Putra, mahasiswa Teknologi Informasi Universitas Lambung Mangkurat: aplikasi Android, web, desktop, dan proyek data.">
+  <meta name="description" content="Portofolio Muhammad Nafis Putra, mahasiswa semester 5 Teknologi Informasi Universitas Lambung Mangkurat: aplikasi Android, web, desktop, data, dan desain UI.">
   <meta property="og:title" content="Muhammad Nafis Putra · Portofolio">
-  <meta property="og:description" content="Aplikasi Android, web, desktop, dan proyek data karya mahasiswa Teknologi Informasi ULM.">
+  <meta property="og:description" content="Aplikasi Android, web, desktop, data, dan desain UI dari Banjarmasin.">
   <meta property="og:image" content="assets/img/bangunan.webp">
-  <meta name="theme-color" content="#2A0B13">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232A0B13'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='34' fill='%23F3ECE4'%3EN%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#3B0B17">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233B0B17'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-size='30' fill='%23F6EDE3'%3ENP%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -23,11 +23,11 @@
 
 <header class="top" id="top">
   <div class="wrap top__inner">
-    <a class="mark" href="#top" aria-label="Kembali ke atas">Nafis Putra</a>
+    <a class="logo" href="#top" aria-label="Kembali ke atas"><b>NP</b><span>Nafis Putra</span></a>
     <nav class="nav" id="nav" aria-label="Navigasi utama">
       <a href="#karya">Karya</a>
       <a href="#tentang">Tentang</a>
-      <a href="#perjalanan">Perjalanan</a>
+      <a href="#rundown">Rundown</a>
       <a href="#sertifikat">Sertifikat</a>
       <a href="#kontak" class="nav__cta">Kontak</a>
     </nav>
@@ -37,341 +37,360 @@
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero__grid">
-      <div class="hero__text">
-        <p class="eyebrow">Portofolio · 2024 – 2026</p>
-        <h1 class="hero__name">
-          <span class="line"><span>Muhammad</span></span>
-          <span class="line"><span><em>Nafis</em> Putra</span></span>
-        </h1>
-        <p class="hero__lede">
-          Mahasiswa semester 5 Teknologi Informasi di Universitas Lambung Mangkurat. Saya membangun aplikasi
-          Android, web, dan desktop, mengolah data menjadi dashboard yang bisa dibaca, dan di luar
-          kelas mengurus acara dari konsep sampai hari pelaksanaan.
-        </p>
-        <div class="hero__actions">
-          <a class="btn btn--light" href="#karya">Lihat karya</a>
-          <a class="btn btn--ghost" href="assets/cv-muhammad-nafis-putra.pdf" download>Unduh CV</a>
-        </div>
-      </div>
-      <figure class="hero__photo">
-        <img src="assets/img/foto.webp" width="640" height="640" alt="Foto Muhammad Nafis Putra">
-      </figure>
-    </div>
+  <!-- ============ HERO: sampul majalah ============ -->
+  <section class="cover">
     <div class="wrap">
-      <dl class="facts">
-        <div><dt>Kampus</dt><dd>Universitas Lambung Mangkurat</dd></div>
-        <div><dt>IPK</dt><dd><b data-count="3.84">3,84</b> <span>/ 4,00</span></dd></div>
-        <div><dt>Semester</dt><dd>5 <span>· angkatan 2024</span></dd></div>
-        <div><dt>Status</dt><dd><i class="dot" aria-hidden="true"></i>Terbuka untuk magang</dd></div>
+      <div class="cover__strip mono">
+        <span>Portofolio</span><span>Edisi 2026</span><span>Vol. 05</span><span class="cover__place">Banjarmasin, Kalimantan Selatan</span>
+      </div>
+
+      <h1 class="masthead" aria-label="Nafis Putra">
+        <span class="line"><span>Nafis</span></span>
+        <span class="line"><span>Putra</span></span>
+      </h1>
+
+      <div class="cover__grid">
+        <div class="cover__intro">
+          <p class="cover__first">Muhammad Nafis Putra</p>
+          <p class="cover__lede">
+            Mahasiswa semester 5 Teknologi Informasi di Universitas Lambung Mangkurat. Saya membangun
+            aplikasi Android, web, dan desktop, merangkai data menjadi dashboard, dan di luar kelas
+            memastikan acara berjalan sesuai <em>rundown</em>.
+          </p>
+          <div class="cover__actions">
+            <a class="btn btn--gold" href="#karya"><span>Lihat karya</span><b aria-hidden="true">↓</b></a>
+            <a class="btn btn--line" href="assets/cv-muhammad-nafis-putra.pdf" download><span>Unduh CV</span><b aria-hidden="true">↗</b></a>
+          </div>
+        </div>
+
+        <figure class="cover__photo">
+          <div class="cover__frame" data-parallax="-0.05">
+            <img src="assets/img/foto.webp" width="640" height="640" alt="Foto Muhammad Nafis Putra">
+          </div>
+          <svg class="badge" viewBox="0 0 160 160" aria-hidden="true">
+            <defs><path id="ring" d="M80 80 m-58 0 a58 58 0 1 1 116 0 a58 58 0 1 1 -116 0"/></defs>
+            <circle cx="80" cy="80" r="78" class="badge__bg"/>
+            <text><textPath href="#ring">TERBUKA UNTUK MAGANG · 2026 · TERBUKA UNTUK MAGANG · 2026 ·</textPath></text>
+            <text x="80" y="92" text-anchor="middle" class="badge__mid">★</text>
+          </svg>
+        </figure>
+
+        <aside class="cover__lines" aria-label="Di edisi ini">
+          <p class="mono cover__label">Di edisi ini</p>
+          <ol>
+            <li><a href="#p-scent"><b>ScentApp</b><span>Marketplace parfum dengan stok real-time</span></a></li>
+            <li><a href="#p-fitzone"><b>FitZone</b><span>Data warehouse yang dibangun dari nol</span></a></li>
+            <li><a href="#p-bangunan"><b>1.016 bangunan</b><span>Disurvei, dipetakan, dibuat dashboard</span></a></li>
+            <li><a href="#rundown"><b>Rundown</b><span>Dari panggung acara ke baris kode</span></a></li>
+          </ol>
+          <div class="barcode" aria-hidden="true"><i></i><span class="mono">IPK 3,84 · SEM 05</span></div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <dl class="stats">
+        <div><dt>IPK dari 4,00</dt><dd data-count="3.84" data-decimals="2">3,84</dd></div>
+        <div><dt>Semester berjalan</dt><dd data-count="5">5</dd></div>
+        <div><dt>Proyek di halaman ini</dt><dd data-count="8">8</dd></div>
+        <div><dt>Sertifikat</dt><dd data-count="5">5</dd></div>
       </dl>
     </div>
   </section>
 
-
-  <!-- KARYA -->
-  <section class="section" id="karya" aria-labelledby="karya-h">
+  <!-- ============ INDEX ============ -->
+  <section class="index" id="karya" aria-labelledby="karya-h">
     <div class="wrap">
-      <header class="section__head">
-        <h2 id="karya-h" class="section__title">Karya terpilih</h2>
-        <p class="section__note">Aplikasi, sistem data, dan situs yang saya kerjakan selama kuliah.</p>
+      <header class="head">
+        <h2 id="karya-h" class="head__title">Karya</h2>
+        <p class="head__note">Delapan proyek: aplikasi, sistem data, situs, dan desain UI. Arahkan kursor untuk mengintip, klik untuk membaca ceritanya.</p>
       </header>
 
-      <!-- 01 ScentApp -->
-      <article class="work">
-        <div class="work__media work__media--phones">
-          <img src="assets/img/scent-penjualan.webp" width="520" height="1156" loading="lazy" alt="ScentApp: halaman penjual berisi pendapatan dan pesanan masuk">
-          <img src="assets/img/scent-pencarian.webp" width="520" height="1156" loading="lazy" alt="ScentApp: pencarian parfum dengan filter profil aroma">
-          <img src="assets/img/scent-pengiriman.webp" width="520" height="1156" loading="lazy" alt="ScentApp: pilihan kurir dan metode pembayaran">
-        </div>
-        <div class="work__meta">
-          <p class="work__line"><span class="work__no">01</span> Pemrograman Mobile · 2026 · Tim 2 orang</p>
-          <h3 class="work__title">ScentApp</h3>
-          <p class="work__desc">
-            Marketplace parfum. Pembeli mencari parfum berdasarkan <em>notes</em> aroma, belanja lewat
-            keranjang, mengunggah bukti transfer, lalu melacak resi. Penjual mengelola produk dan
-            pesanan, dan stok berubah di layar secara langsung lewat Firestore.
-          </p>
-          <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>MVVM</li><li>Room</li><li>Retrofit</li><li>Firebase</li></ul>
-          <div class="work__links">
-            <a class="pill" href="https://github.com/MuhammadNafisPutra/SCENT" target="_blank" rel="noopener">Lihat kode</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 02 Bangunan -->
-      <article class="work work--flip">
-        <figure class="work__media work__media--poster">
-          <img src="assets/img/bangunan.webp" width="1200" height="980" loading="lazy" alt="Poster analisis kondisi bangunan Kota Banjarmasin: 148 dari 193 bangunan rusak yang masih dihuni berdinding kayu">
-        </figure>
-        <div class="work__meta">
-          <p class="work__line"><span class="work__no">02</span> UAS Visualisasi Data · 2026</p>
-          <h3 class="work__title">Kondisi Bangunan Banjarmasin</h3>
-          <p class="work__desc">
-            Dari survei lapangan 1.016 bangunan di lima kecamatan, saya membuat dashboard, peta 3D
-            interaktif, dan poster A3. Temuan utamanya: 3 dari 4 bangunan rusak yang masih dihuni
-            berdinding kayu, bahan yang paling rawan kebakaran.
-          </p>
-          <ul class="tags"><li>Python</li><li>pandas</li><li>Plotly</li><li>Streamlit</li><li>MapLibre GL</li></ul>
-          <div class="work__links">
-            <a class="pill pill--solid" href="https://dashboard-bangunan-banjarmasin.streamlit.app/" target="_blank" rel="noopener">Buka dashboard</a>
-            <a class="pill" href="https://muhammadnafisputra.github.io/visualisasi-data-bangunan/peta-3d/" target="_blank" rel="noopener">Peta 3D</a>
-            <a class="pill" href="https://github.com/MuhammadNafisPutra/visualisasi-data-bangunan" target="_blank" rel="noopener">Lihat kode</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 03 FitZone -->
-      <article class="work">
-        <figure class="work__media work__media--screen">
-          <img src="assets/img/fitzone.webp" width="1440" height="920" loading="lazy" alt="Dashboard FitZone halaman Ringkasan Eksekutif: 973 member, rata-rata lemak tubuh 25 persen, dan grafik lemak tubuh menurut frekuensi latihan">
-        </figure>
-        <div class="work__meta">
-          <p class="work__line"><span class="work__no">03</span> UAS Kecerdasan Bisnis · 2026</p>
-          <h3 class="work__title">Pipeline &amp; Data Warehouse FitZone</h3>
-          <p class="work__desc">
-            Sistem BI untuk jaringan gym fiktif PT FitZone Nusantara. Dashboard Streamlit menjawab
-            pertanyaan bisnis seperti siapa member yang paling berisiko berhenti, dengan enam halaman:
-            ringkasan, retensi, program, benchmark WHO, prediksi lemak tubuh, dan kualitas data.
-          </p>
-          <details class="dw">
-            <summary>Cara saya membangun data warehouse-nya</summary>
-            <ol>
-              <li><b>Sumber.</b> CSV kebiasaan latihan member (harian) dan WHO Global Health Observatory API (bulanan).</li>
-              <li><b>Data lake.</b> File asli disimpan di <em>raw zone</em> lengkap dengan checksum dan manifest, lalu hasil bersihnya di <em>curated zone</em> sebagai parquet.</li>
-              <li><b>Staging &amp; quality gate.</b> Data dimuat ke schema staging dan dicek dengan 16 aturan; batch berhenti bila baris ditolak lebih dari 5%, dan semua penolakan dicatat.</li>
-              <li><b>Star schema.</b> 7 dimensi (member, gender, jenis latihan, level, kategori BMI, negara, indikator) dan 3 fakta (sesi latihan, pengukuran tubuh, benchmark WHO) di PostgreSQL, dimuat dalam satu transaksi beserta rekonsiliasi jumlah baris.</li>
-              <li><b>Data mart.</b> <em>View</em> dan <em>materialized view</em> per kebutuhan bisnis, menjadi sumber dashboard.</li>
-              <li><b>Otomasi.</b> Tiga DAG Airflow (member harian, WHO bulanan, backup), log audit per tahap, dan model Random Forest untuk memprediksi lemak tubuh.</li>
-            </ol>
-          </details>
-          <ul class="tags"><li>Python</li><li>Apache Airflow</li><li>PostgreSQL</li><li>Streamlit</li><li>Docker</li><li>scikit-learn</li></ul>
-          <div class="work__links">
-            <a class="pill" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis" target="_blank" rel="noopener">Lihat kode</a>
-            <a class="pill" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis/blob/main/docs/gambar/e24_star_schema.png" target="_blank" rel="noopener">Star schema</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 04 CommitIn -->
-      <article class="work work--flip">
-        <figure class="work__media work__media--screen">
-          <img src="assets/img/commitin-pelamar.webp" width="1440" height="900" loading="lazy" alt="CommitIn: dashboard pelamar dengan status lamaran dan jadwal wawancara">
-        </figure>
-        <div class="work__meta">
-          <p class="work__line"><span class="work__no">04</span> UAS Pemrograman Web · 2026 · Prototipe antarmuka</p>
-          <h3 class="work__title">CommitIn</h3>
-          <p class="work__desc">
-            Platform rekrutmen kepanitiaan kampus. Mahasiswa mencari lowongan BEM, HIMA, dan panitia
-            acara lalu memantau lamarannya, sementara penyelenggara menyaring pelamar dan mengelola
-            lowongan.
-          </p>
-          <ul class="tags"><li>Laravel 12</li><li>Blade</li><li>Tailwind CSS</li></ul>
-          <div class="work__links">
-            <a class="pill" href="https://github.com/MuhammadNafisPutra/CommitIn" target="_blank" rel="noopener">Lihat kode</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 05 BarterSkill -->
-      <article class="work">
-        <figure class="work__media work__media--screen">
-          <img src="assets/img/barterskill.webp" width="1440" height="900" loading="lazy" alt="BarterSkill: dashboard berisi postingan Offer dan Request keahlian">
-        </figure>
-        <div class="work__meta">
-          <p class="work__line"><span class="work__no">05</span> UAS Pemrograman 2 · 2025</p>
-          <h3 class="work__title">BarterSkill</h3>
-          <p class="work__desc">
-            Mahasiswa bertukar keahlian tanpa uang. Setiap postingan berupa <em>Offer</em> atau
-            <em>Request</em>; pengguna lain mengajukan barter, dan pemilik postingan memutuskan
-            menerima atau menolaknya.
-          </p>
-          <ul class="tags"><li>Java</li><li>JavaFX</li><li>MySQL</li><li>JDBC</li><li>Maven</li></ul>
-          <div class="work__links">
-            <a class="pill" href="https://github.com/MuhammadNafisPutra/BarterSkill" target="_blank" rel="noopener">Lihat kode</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- LAINNYA -->
-  <section class="section section--tint" aria-labelledby="lain-h">
-    <div class="wrap">
-      <header class="section__head">
-        <h2 id="lain-h" class="section__title">Proyek lainnya</h2>
-        <p class="section__note">Proyek UAS yang lebih kecil, ditambah satu desain UI di Figma.</p>
-      </header>
-
-      <ul class="cards">
-        <li class="card">
-          <a href="https://github.com/MuhammadNafisPutra/WeFly" target="_blank" rel="noopener">
-            <img src="assets/img/wefly.webp" width="1440" height="900" loading="lazy" alt="We Fly: hero dengan foto pesawat dan formulir pencarian penerbangan">
-            <div class="card__body">
-              <p class="card__kind">UAS Pemrograman Web · 2025</p>
-              <h3>We Fly</h3>
-              <p>Situs pemesanan tiket pesawat: pencarian penerbangan, formulir pemesanan, dan destinasi promo, dengan CSS yang ditulis sendiri.</p>
-              <p class="card__stack">HTML · CSS · JavaScript</p>
-            </div>
-          </a>
-        </li>
-        <li class="card">
-          <a href="https://github.com/MuhammadNafisPutra/Mie-Legenda" target="_blank" rel="noopener">
-            <img src="assets/img/mielegenda.webp" width="1440" height="900" loading="lazy" alt="Mie Legenda: hero dengan foto semangkuk mie ayam">
-            <div class="card__body">
-              <p class="card__kind">UAS Kewirausahaan · 2025</p>
-              <h3>Mie Legenda</h3>
-              <p>Landing page usaha mie ayam di Banjarmasin: menu dengan filter, pesan online, dan pemesanan lewat WhatsApp.</p>
-              <p class="card__stack">HTML · Bootstrap · jQuery</p>
-            </div>
-          </a>
-        </li>
-        <li class="card card--duo">
-          <div class="card__shots">
-            <img src="assets/img/priotify.webp" width="1440" height="900" loading="lazy" alt="Priotify: landing page bertuliskan Master Your Academy Chaos dengan tombol Sign Up For Free">
-            <img src="assets/img/priotify-home.webp" width="1440" height="900" loading="lazy" alt="Priotify: dashboard berisi progres harian, tugas yang jatuh tempo, kelas hari ini, dan materi yang dipelajari">
-          </div>
-          <div class="card__body">
-            <p class="card__kind">Interaksi Manusia dan Komputer · 2025</p>
-            <h3>Priotify</h3>
-            <p>Desain UI aplikasi pengatur prioritas belajar: dashboard progres harian, tugas, jadwal, pengingat, dan learning hub, lengkap dengan prototipe interaktif.</p>
-            <p class="card__stack">Figma · UI/UX</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- TENTANG -->
-  <section class="section" id="tentang" aria-labelledby="tentang-h">
-    <div class="wrap about">
-      <div>
-        <h2 id="tentang-h" class="section__title">Tentang</h2>
-        <p class="pull">
-          Saya terbiasa memastikan sesuatu berjalan sesuai rencana: aplikasi yang tidak berhenti
-          di tengah jalan, dan acara yang selesai tepat waktu.
-        </p>
-      </div>
-      <div class="about__body">
-        <p>
-          Saat ini saya menjalani semester 5 di Teknologi Informasi ULM. Proyek kuliah membawa saya dari Java
-          desktop ke Android dengan Kotlin, lalu ke web dengan Laravel, dan sekarang banyak ke
-          pengolahan data. Tahun ini saya juga mengikuti pelatihan jaringan dan keamanan siber
-          lewat Digital Talent Scholarship.
-        </p>
-        <p>
-          Untuk aplikasi, saya menulis Kotlin dengan Jetpack Compose, Room, Retrofit, dan Firebase
-          di Android, Java dengan JavaFX dan MySQL di desktop, serta PHP dengan Laravel, Tailwind CSS,
-          dan Bootstrap di web.
-        </p>
-        <p>
-          Untuk data, saya memakai Python (pandas, NumPy, Plotly, seaborn, scikit-learn) dan
-          Streamlit untuk dashboard, menyusun pipeline dan data warehouse dengan Apache Airflow,
-          PostgreSQL, dan Docker, lalu menyajikan hasilnya di Tableau.
-        </p>
-        <p>
-          Sehari-hari saya memakai Git dan GitHub, Android Studio, IntelliJ IDEA, VS Code, dan Figma.
-          Di luar kode, saya bekerja lepas sebagai <em>event</em> dan <em>wedding organizer</em> dan
-          menulis skrip MC untuk acara himpunan. Pengalaman itu melatih saya bekerja dengan tenggat,
-          berkoordinasi dengan banyak orang, dan tetap tenang saat rencana berubah.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PERJALANAN -->
-  <section class="section section--tint" id="perjalanan" aria-labelledby="perjalanan-h">
-    <div class="wrap">
-      <header class="section__head">
-        <h2 id="perjalanan-h" class="section__title">Perjalanan</h2>
-      </header>
-
-      <ol class="timeline">
-        <li>
-          <p class="timeline__when">Jun 2024 – sekarang</p>
-          <h3>Freelance Event &amp; Wedding Organizer</h3>
-          <p class="timeline__where">CV. Glowing Banjarmasin Group</p>
-          <p>Meraih predikat MVP untuk pembuatan konten pernikahan, menyelenggarakan tiga acara dalam
-            satu bulan, dan menangani perlengkapan pendukung acara bersama Glowing Project.</p>
-        </li>
-        <li>
-          <p class="timeline__when">Mar – Des 2025</p>
-          <h3>Anggota Divisi Minat dan Bakat</h3>
-          <p class="timeline__where">Himpunan Mahasiswa Teknologi Informasi ULM</p>
-          <p>Koordinator acara Sapa Teknik, panitia PKKMB dan LKMM-PD Prodi TI 2025, dan penanggung
-            jawab kegiatan futsal himpunan.</p>
-        </li>
-        <li>
-          <p class="timeline__when">Agu 2024 – sekarang</p>
-          <h3>S1 Teknologi Informasi</h3>
-          <p class="timeline__where">Universitas Lambung Mangkurat · IPK 3,84 · semester 5</p>
-        </li>
-        <li>
-          <p class="timeline__when">2021 – 2024</p>
-          <h3>MAN 2 Banjarmasin</h3>
-          <p class="timeline__where">Nilai rata-rata 89 · Juara 3 Kejuaraan Futsal U-17 Kalimantan Selatan</p>
-        </li>
+      <ol class="plist">
+        <li><a href="#p-scent" data-peek="assets/img/scent-pencarian.webp" data-tall><span class="plist__no">01</span><span class="plist__t">ScentApp</span><span class="plist__c">Android · Kotlin</span><span class="plist__y">2026</span></a></li>
+        <li><a href="#p-bangunan" data-peek="assets/img/bangunan.webp"><span class="plist__no">02</span><span class="plist__t">Bangunan Banjarmasin</span><span class="plist__c">Visualisasi data</span><span class="plist__y">2026</span></a></li>
+        <li><a href="#p-fitzone" data-peek="assets/img/fitzone.webp"><span class="plist__no">03</span><span class="plist__t">FitZone Data Warehouse</span><span class="plist__c">Big data · BI</span><span class="plist__y">2026</span></a></li>
+        <li><a href="#p-commitin" data-peek="assets/img/commitin-pelamar.webp"><span class="plist__no">04</span><span class="plist__t">CommitIn</span><span class="plist__c">Web · Laravel</span><span class="plist__y">2026</span></a></li>
+        <li><a href="#p-barter" data-peek="assets/img/barterskill.webp"><span class="plist__no">05</span><span class="plist__t">BarterSkill</span><span class="plist__c">Desktop · JavaFX</span><span class="plist__y">2025</span></a></li>
+        <li><a href="#lainnya" data-peek="assets/img/priotify.webp"><span class="plist__no">06</span><span class="plist__t">Priotify</span><span class="plist__c">Desain UI · Figma</span><span class="plist__y">2025</span></a></li>
+        <li><a href="#lainnya" data-peek="assets/img/wefly.webp"><span class="plist__no">07</span><span class="plist__t">We Fly</span><span class="plist__c">Web · HTML CSS JS</span><span class="plist__y">2025</span></a></li>
+        <li><a href="#lainnya" data-peek="assets/img/mielegenda.webp"><span class="plist__no">08</span><span class="plist__t">Mie Legenda</span><span class="plist__c">Landing page</span><span class="plist__y">2025</span></a></li>
       </ol>
     </div>
+    <div class="peek" aria-hidden="true"><img alt=""></div>
   </section>
 
-  <!-- SERTIFIKAT -->
-  <section class="section" id="sertifikat" aria-labelledby="sertifikat-h">
-    <div class="wrap">
-      <header class="section__head">
-        <h2 id="sertifikat-h" class="section__title">Sertifikat</h2>
-        <p class="section__note">Klik untuk membuka sertifikat aslinya.</p>
-      </header>
+  <!-- ============ CASES ============ -->
 
-      <ul class="certs">
-        <li><a href="assets/sertifikat/dts-cybersecurity-ai-google.pdf" target="_blank" rel="noopener">
-          <span class="certs__when">Jun 2026 · 108 jam</span>
-          <span class="certs__name">Intermediate Cybersecurity + AI Essentials · Google</span>
-          <span class="certs__by">Digital Talent Scholarship, Komdigi</span>
-        </a></li>
-        <li><a href="assets/sertifikat/dts-intermediate-network-admin.pdf" target="_blank" rel="noopener">
-          <span class="certs__when">Jun 2026 · 12 jam</span>
-          <span class="certs__name">Intermediate Associate Network Administrator</span>
-          <span class="certs__by">Digital Talent Scholarship, Komdigi</span>
-        </a></li>
-        <li><a href="assets/sertifikat/dts-fundamental-network-admin.pdf" target="_blank" rel="noopener">
-          <span class="certs__when">Jun 2026 · 12 jam</span>
-          <span class="certs__name">Fundamental of Associate Network Administrator</span>
-          <span class="certs__by">Digital Talent Scholarship, Komdigi</span>
-        </a></li>
-        <li><a href="assets/sertifikat/penghargaan-hmti.pdf" target="_blank" rel="noopener">
-          <span class="certs__when">Mar 2026</span>
-          <span class="certs__name">Penghargaan Pengurus, Divisi Minat dan Bakat</span>
-          <span class="certs__by">HMTI Fakultas Teknik ULM</span>
-        </a></li>
-        <li><a href="assets/sertifikat/workshop-cybersecurity-ulm.pdf" target="_blank" rel="noopener">
-          <span class="certs__when">Nov 2025</span>
-          <span class="certs__name">Workshop Cybersecurity</span>
-          <span class="certs__by">Program Studi Teknologi Informasi ULM</span>
-        </a></li>
+  <!-- 01 ScentApp -->
+  <article class="case case--wine" id="p-scent" aria-labelledby="t-scent">
+    <div class="wrap">
+      <header class="case__head">
+        <span class="case__no" aria-hidden="true">01</span>
+        <div>
+          <p class="mono">Pemrograman Mobile · Feb–Jun 2026 · Tim 2 orang</p>
+          <h3 id="t-scent" class="case__title">ScentApp</h3>
+        </div>
+      </header>
+      <div class="case__media case__media--phones" data-parallax="0.04">
+        <img src="assets/img/scent-penjualan.webp" width="520" height="1156" loading="lazy" alt="ScentApp: halaman penjual berisi pendapatan dan pesanan masuk">
+        <img src="assets/img/scent-pencarian.webp" width="520" height="1156" loading="lazy" alt="ScentApp: pencarian parfum dengan filter profil aroma">
+        <img src="assets/img/scent-pengiriman.webp" width="520" height="1156" loading="lazy" alt="ScentApp: pilihan kurir dan metode pembayaran">
+      </div>
+      <div class="case__body">
+        <p class="case__lead">Marketplace khusus parfum. Pembeli mencari wangi berdasarkan <em>notes</em> aroma, belanja lewat keranjang, mengunggah bukti transfer, lalu melacak resi. Penjual mengelola produk dan pesanan, dan stok berubah di layar saat itu juga lewat Firestore.</p>
+        <div class="case__side">
+          <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>MVVM</li><li>Room</li><li>Retrofit</li><li>Firebase</li></ul>
+          <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/SCENT" target="_blank" rel="noopener">Lihat kode ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 02 Bangunan -->
+  <article class="case case--crimson" id="p-bangunan" aria-labelledby="t-bangunan">
+    <div class="wrap">
+      <header class="case__head">
+        <span class="case__no" aria-hidden="true">02</span>
+        <div>
+          <p class="mono">UAS Visualisasi Data · 2026</p>
+          <h3 id="t-bangunan" class="case__title">Kondisi Bangunan Banjarmasin</h3>
+        </div>
+      </header>
+      <div class="case__split">
+        <figure class="case__media case__media--card" data-parallax="0.04">
+          <img src="assets/img/bangunan.webp" width="1200" height="980" loading="lazy" alt="Poster analisis kondisi bangunan Kota Banjarmasin: 148 dari 193 bangunan rusak yang masih dihuni berdinding kayu">
+        </figure>
+        <div class="case__body case__body--stack">
+          <p class="case__big"><b>148</b> dari 193 bangunan rusak yang masih dihuni berdinding kayu.</p>
+          <p class="case__lead">Dari survei lapangan 1.016 bangunan di lima kecamatan, saya membuat dashboard, peta 3D interaktif, dan poster A3. Temuan itu saya ubah jadi rekomendasi: dahulukan pemeriksaan kebakaran di Banjarmasin Barat dan Utara.</p>
+          <ul class="tags"><li>Python</li><li>pandas</li><li>Plotly</li><li>Streamlit</li><li>MapLibre GL</li></ul>
+          <div class="links">
+            <a class="link" href="https://dashboard-bangunan-banjarmasin.streamlit.app/" target="_blank" rel="noopener">Buka dashboard ↗</a>
+            <a class="link" href="https://muhammadnafisputra.github.io/visualisasi-data-bangunan/peta-3d/" target="_blank" rel="noopener">Peta 3D ↗</a>
+            <a class="link" href="https://github.com/MuhammadNafisPutra/visualisasi-data-bangunan" target="_blank" rel="noopener">Kode ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 03 FitZone -->
+  <article class="case case--cream" id="p-fitzone" aria-labelledby="t-fitzone">
+    <div class="wrap">
+      <header class="case__head">
+        <span class="case__no" aria-hidden="true">03</span>
+        <div>
+          <p class="mono">UAS Kecerdasan Bisnis · 2026</p>
+          <h3 id="t-fitzone" class="case__title">FitZone Data Warehouse</h3>
+        </div>
+      </header>
+      <figure class="case__media case__media--browser" data-parallax="0.04">
+        <span class="case__bar" aria-hidden="true"><i></i><i></i><i></i><em>fitzone · dashboard streamlit</em></span>
+        <img src="assets/img/fitzone.webp" width="1440" height="920" loading="lazy" alt="Dashboard FitZone halaman Ringkasan Eksekutif: 973 member, rata-rata lemak tubuh 25 persen, dan grafik lemak tubuh menurut frekuensi latihan">
+      </figure>
+      <div class="case__body">
+        <p class="case__lead">Sistem BI untuk jaringan gym fiktif PT FitZone Nusantara. Dashboard enam halaman menjawab pertanyaan bisnis seperti member mana yang paling berisiko berhenti. Di baliknya ada data warehouse yang saya bangun dari nol.</p>
+        <div class="case__side">
+          <ul class="tags"><li>Python</li><li>Apache Airflow</li><li>PostgreSQL</li><li>Streamlit</li><li>Docker</li><li>scikit-learn</li></ul>
+          <div class="links">
+            <a class="link" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis" target="_blank" rel="noopener">Lihat kode ↗</a>
+            <a class="link" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis/blob/main/docs/gambar/e24_star_schema.png" target="_blank" rel="noopener">Star schema ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow">
+        <p class="mono flow__label">Cara saya membangun data warehouse-nya</p>
+        <ol class="flow__steps">
+          <li><b>Sumber</b><span>CSV kebiasaan latihan member (harian) dan WHO Global Health Observatory API (bulanan).</span></li>
+          <li><b>Data lake</b><span>File asli di <em>raw zone</em> dengan checksum dan manifest; hasil bersih di <em>curated zone</em> sebagai parquet.</span></li>
+          <li><b>Quality gate</b><span>16 aturan validasi di staging. Batch berhenti bila lebih dari 5% baris ditolak, dan setiap penolakan dicatat.</span></li>
+          <li><b>Star schema</b><span>7 dimensi dan 3 fakta di PostgreSQL, dimuat dalam satu transaksi beserta rekonsiliasi jumlah baris.</span></li>
+          <li><b>Data mart</b><span><em>View</em> dan <em>materialized view</em> per kebutuhan bisnis, menjadi sumber dashboard.</span></li>
+          <li><b>Otomasi</b><span>Tiga DAG Airflow, log audit per tahap, backup, dan model Random Forest untuk prediksi lemak tubuh.</span></li>
+        </ol>
+      </div>
+    </div>
+  </article>
+
+  <!-- 04 CommitIn -->
+  <article class="case case--blush" id="p-commitin" aria-labelledby="t-commitin">
+    <div class="wrap">
+      <header class="case__head">
+        <span class="case__no" aria-hidden="true">04</span>
+        <div>
+          <p class="mono">UAS Pemrograman Web · 2026 · Prototipe antarmuka</p>
+          <h3 id="t-commitin" class="case__title">CommitIn</h3>
+        </div>
+      </header>
+      <figure class="case__media case__media--browser" data-parallax="0.04">
+        <span class="case__bar" aria-hidden="true"><i></i><i></i><i></i><em>commitin · dashboard pelamar</em></span>
+        <img src="assets/img/commitin-pelamar.webp" width="1440" height="900" loading="lazy" alt="CommitIn: dashboard pelamar dengan status lamaran dan jadwal wawancara">
+      </figure>
+      <div class="case__body">
+        <p class="case__lead">Platform rekrutmen kepanitiaan kampus. Mahasiswa mencari lowongan BEM, HIMA, dan panitia acara lalu memantau lamarannya tahap demi tahap; penyelenggara menyaring pelamar dan mengelola lowongan.</p>
+        <div class="case__side">
+          <ul class="tags"><li>Laravel 12</li><li>Blade</li><li>Tailwind CSS</li></ul>
+          <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/CommitIn" target="_blank" rel="noopener">Lihat kode ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 05 BarterSkill -->
+  <article class="case case--ink" id="p-barter" aria-labelledby="t-barter">
+    <div class="wrap">
+      <header class="case__head">
+        <span class="case__no" aria-hidden="true">05</span>
+        <div>
+          <p class="mono">UAS Pemrograman 2 · Des 2025</p>
+          <h3 id="t-barter" class="case__title">BarterSkill</h3>
+        </div>
+      </header>
+      <figure class="case__media case__media--browser" data-parallax="0.04">
+        <span class="case__bar" aria-hidden="true"><i></i><i></i><i></i><em>barterskill · javafx</em></span>
+        <img src="assets/img/barterskill.webp" width="1440" height="900" loading="lazy" alt="BarterSkill: dashboard berisi postingan Offer dan Request keahlian">
+      </figure>
+      <div class="case__body">
+        <p class="case__lead">Mahasiswa bertukar keahlian tanpa uang: desain logo ditukar les Java, fotografi ditukar terjemahan. Setiap postingan berupa <em>Offer</em> atau <em>Request</em>, dan pemilik postingan memutuskan menerima atau menolak barter.</p>
+        <div class="case__side">
+          <ul class="tags"><li>Java</li><li>JavaFX</li><li>MySQL</li><li>JDBC</li><li>Maven</li></ul>
+          <div class="links"><a class="link" href="https://github.com/MuhammadNafisPutra/BarterSkill" target="_blank" rel="noopener">Lihat kode ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============ LAINNYA ============ -->
+  <section class="more" id="lainnya" aria-labelledby="lain-h">
+    <div class="wrap">
+      <header class="head head--light">
+        <h2 id="lain-h" class="head__title">Lainnya</h2>
+        <p class="head__note">Proyek UAS yang lebih kecil dan satu desain UI.</p>
+      </header>
+      <ul class="cards">
+        <li class="card tilt">
+          <div class="card__shots">
+            <img src="assets/img/priotify.webp" width="1440" height="900" loading="lazy" alt="Priotify: landing page bertuliskan Master Your Academy Chaos">
+            <img src="assets/img/priotify-home.webp" width="1440" height="900" loading="lazy" alt="Priotify: dashboard progres harian dan tugas jatuh tempo">
+          </div>
+          <div class="card__body">
+            <p class="mono">Interaksi Manusia dan Komputer · 2025</p>
+            <h3>Priotify</h3>
+            <p>Desain UI aplikasi pengatur prioritas belajar: progres harian, tugas, jadwal, pengingat, dan learning hub, lengkap dengan prototipe interaktif di Figma.</p>
+          </div>
+        </li>
+        <li class="card tilt">
+          <a href="https://github.com/MuhammadNafisPutra/WeFly" target="_blank" rel="noopener">
+            <div class="card__shots"><img src="assets/img/wefly.webp" width="1440" height="900" loading="lazy" alt="We Fly: hero dengan foto pesawat dan formulir pencarian penerbangan"></div>
+            <div class="card__body">
+              <p class="mono">UAS Pemrograman Web · 2025</p>
+              <h3>We Fly <span aria-hidden="true">↗</span></h3>
+              <p>Situs pemesanan tiket pesawat: pencarian penerbangan, formulir pemesanan, dan destinasi promo, dengan CSS yang ditulis sendiri.</p>
+            </div>
+          </a>
+        </li>
+        <li class="card tilt">
+          <a href="https://github.com/MuhammadNafisPutra/Mie-Legenda" target="_blank" rel="noopener">
+            <div class="card__shots"><img src="assets/img/mielegenda.webp" width="1440" height="900" loading="lazy" alt="Mie Legenda: hero dengan foto semangkuk mie ayam"></div>
+            <div class="card__body">
+              <p class="mono">UAS Kewirausahaan · 2025</p>
+              <h3>Mie Legenda <span aria-hidden="true">↗</span></h3>
+              <p>Landing page usaha mie ayam di Banjarmasin: menu dengan filter, pesan online, dan pemesanan lewat WhatsApp.</p>
+            </div>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
 
-  <!-- KONTAK -->
+  <!-- ============ TENTANG ============ -->
+  <section class="about" id="tentang" aria-labelledby="tentang-h">
+    <div class="wrap">
+      <h2 id="tentang-h" class="sr">Tentang</h2>
+      <p class="about__big">
+        Kode yang rapi, <span>acara yang tepat waktu.</span> Dua-duanya soal memastikan semua berjalan sesuai rencana.
+      </p>
+      <div class="about__cols">
+        <p>Saat ini saya menjalani semester 5 di Teknologi Informasi ULM. Proyek kuliah membawa saya dari Java desktop ke Android dengan Kotlin, lalu ke web dengan Laravel, dan sekarang banyak ke data. Tahun ini saya juga ikut pelatihan jaringan dan keamanan siber lewat Digital Talent Scholarship.</p>
+        <p>Untuk aplikasi, saya menulis Kotlin dengan Jetpack Compose, Room, Retrofit, dan Firebase; Java dengan JavaFX dan MySQL; serta PHP dengan Laravel, Tailwind CSS, dan Bootstrap. Untuk data, saya memakai Python (pandas, NumPy, Plotly, seaborn, scikit-learn), Streamlit, Apache Airflow, PostgreSQL, Docker, dan Tableau.</p>
+        <p>Sehari-hari saya bekerja dengan Git dan GitHub, Android Studio, IntelliJ IDEA, VS Code, dan Figma. Di luar kode, saya bekerja lepas sebagai <em>event</em> dan <em>wedding organizer</em> dan menulis skrip MC untuk acara himpunan, jadi terbiasa dengan tenggat dan rencana yang berubah di menit terakhir.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RUNDOWN ============ -->
+  <section class="rundown" id="rundown" aria-labelledby="rundown-h">
+    <div class="wrap">
+      <header class="head">
+        <h2 id="rundown-h" class="head__title">Rundown</h2>
+        <p class="head__note">Perjalanan saya, ditulis seperti susunan acara.</p>
+      </header>
+      <div class="sheet" role="table" aria-label="Rundown perjalanan">
+        <div class="sheet__row sheet__row--head" role="row">
+          <span role="columnheader">Waktu</span><span role="columnheader">Kegiatan</span><span role="columnheader">Keterangan</span>
+        </div>
+        <div class="sheet__row" role="row">
+          <span role="cell" class="mono">Jun 2024 – kini</span>
+          <span role="cell"><b>Freelance Event &amp; Wedding Organizer</b><small>CV. Glowing Banjarmasin Group</small></span>
+          <span role="cell">Predikat MVP untuk konten pernikahan; tiga acara sukses dalam satu bulan; menangani perlengkapan acara bersama Glowing Project.</span>
+        </div>
+        <div class="sheet__row" role="row">
+          <span role="cell" class="mono">Mar – Des 2025</span>
+          <span role="cell"><b>Anggota Divisi Minat dan Bakat</b><small>HMTI Universitas Lambung Mangkurat</small></span>
+          <span role="cell">Koordinator acara Sapa Teknik; panitia PKKMB dan LKMM-PD Prodi TI 2025; penanggung jawab futsal himpunan.</span>
+        </div>
+        <div class="sheet__row" role="row">
+          <span role="cell" class="mono">Agu 2024 – kini</span>
+          <span role="cell"><b>S1 Teknologi Informasi</b><small>Universitas Lambung Mangkurat</small></span>
+          <span role="cell">Semester 5, IPK 3,84.</span>
+        </div>
+        <div class="sheet__row" role="row">
+          <span role="cell" class="mono">2021 – 2024</span>
+          <span role="cell"><b>MAN 2 Banjarmasin</b><small>Nilai rata-rata 89</small></span>
+          <span role="cell">Juara 3 Kejuaraan Futsal U-17 Kalimantan Selatan, Borneo Cup, dan Polanka Cup.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERTIFIKAT ============ -->
+  <section class="certs" id="sertifikat" aria-labelledby="sertifikat-h">
+    <div class="wrap">
+      <header class="head head--light">
+        <h2 id="sertifikat-h" class="head__title">Sertifikat</h2>
+        <p class="head__note">Klik tiket untuk membuka sertifikat aslinya.</p>
+      </header>
+      <ul class="tickets">
+        <li><a class="ticket" href="assets/sertifikat/dts-cybersecurity-ai-google.pdf" target="_blank" rel="noopener">
+          <span class="ticket__main"><span class="mono">Digital Talent Scholarship · Komdigi</span><b>Intermediate Cybersecurity + AI Essentials · Google</b></span>
+          <span class="ticket__stub"><b>108</b><span class="mono">jam · Jun 2026</span></span></a></li>
+        <li><a class="ticket" href="assets/sertifikat/dts-intermediate-network-admin.pdf" target="_blank" rel="noopener">
+          <span class="ticket__main"><span class="mono">Digital Talent Scholarship · Komdigi</span><b>Intermediate Associate Network Administrator</b></span>
+          <span class="ticket__stub"><b>12</b><span class="mono">jam · Jun 2026</span></span></a></li>
+        <li><a class="ticket" href="assets/sertifikat/dts-fundamental-network-admin.pdf" target="_blank" rel="noopener">
+          <span class="ticket__main"><span class="mono">Digital Talent Scholarship · Komdigi</span><b>Fundamental of Associate Network Administrator</b></span>
+          <span class="ticket__stub"><b>12</b><span class="mono">jam · Jun 2026</span></span></a></li>
+        <li><a class="ticket" href="assets/sertifikat/workshop-cybersecurity-ulm.pdf" target="_blank" rel="noopener">
+          <span class="ticket__main"><span class="mono">Prodi Teknologi Informasi ULM</span><b>Workshop Cybersecurity</b></span>
+          <span class="ticket__stub"><b>NOV</b><span class="mono">2025</span></span></a></li>
+        <li><a class="ticket" href="assets/sertifikat/penghargaan-hmti.pdf" target="_blank" rel="noopener">
+          <span class="ticket__main"><span class="mono">HMTI Fakultas Teknik ULM</span><b>Penghargaan Pengurus, Divisi Minat dan Bakat</b></span>
+          <span class="ticket__stub"><b>MAR</b><span class="mono">2026</span></span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ KONTAK ============ -->
   <section class="contact" id="kontak" aria-labelledby="kontak-h">
     <div class="wrap">
-      <h2 id="kontak-h" class="contact__title">Hubungi atau kunjungi beberapa <em>media sosial</em> saya.</h2>
+      <h2 id="kontak-h" class="contact__title">Hubungi atau kunjungi beberapa media sosial saya.</h2>
       <ul class="socials">
-        <li><a href="mailto:muhammadnafisputra@gmail.com">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm1.8.3 7.2 5.4 7.2-5.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          <span>Email<small>Kirim pesan langsung</small></span></a></li>
-        <li><a href="https://wa.me/6287735617689" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.6c.2-.4.5-.4.8-.4h.5c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c.6 1.1 1.4 1.9 2.5 2.5l.6-.5c.2-.2.4-.2.6-.1l1.5.6c.3.1.4.3.4.5v.5c0 .3-.1.6-.4.8-.6.4-1.4.6-2.2.3-2.1-.8-3.8-2.5-4.6-4.6-.3-.8-.1-1.6.3-2.2Z" fill="currentColor"/></svg>
-          <span>WhatsApp<small>0877-3561-7689</small></span></a></li>
-        <li><a href="https://www.linkedin.com/in/muhammad-nafis-putra-92273032b" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5v6M8 7.6v.1M11.5 16.5v-6m0 2.6c0-1.6 1-2.7 2.4-2.7s2.1.9 2.1 2.6v3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          <span>LinkedIn<small>Muhammad Nafis Putra</small></span></a></li>
-        <li><a href="https://github.com/MuhammadNafisPutra" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.2 19.4c-3.6 1.1-3.6-1.9-5-2.3m10 4v-2.9c0-.9.1-1.4-.4-1.9 2.4-.3 4.9-1.2 4.9-5.3a4.1 4.1 0 0 0-1.1-2.9 3.8 3.8 0 0 0-.1-2.8s-.9-.3-2.9 1.1a10 10 0 0 0-5.2 0C7.4 5 6.5 5.3 6.5 5.3a3.8 3.8 0 0 0-.1 2.8 4.1 4.1 0 0 0-1.1 2.9c0 4.1 2.5 5 4.9 5.3-.5.5-.5 1-.4 1.9v2.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>GitHub<small>@MuhammadNafisPutra</small></span></a></li>
+        <li><a href="mailto:muhammadnafisputra@gmail.com"><span class="mono">01</span><b>Email</b><small>muhammadnafisputra@gmail.com</small><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://wa.me/6287735617689" target="_blank" rel="noopener"><span class="mono">02</span><b>WhatsApp</b><small>0877-3561-7689</small><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://www.linkedin.com/in/muhammad-nafis-putra-92273032b" target="_blank" rel="noopener"><span class="mono">03</span><b>LinkedIn</b><small>Muhammad Nafis Putra</small><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://github.com/MuhammadNafisPutra" target="_blank" rel="noopener"><span class="mono">04</span><b>GitHub</b><small>@MuhammadNafisPutra</small><i aria-hidden="true">↗</i></a></li>
       </ul>
     </div>
   </section>
@@ -381,7 +400,7 @@
 <footer class="foot">
   <div class="wrap foot__inner">
     <p>&copy; <span id="year">2026</span> Muhammad Nafis Putra · Banjarmasin</p>
-    <a href="assets/cv-muhammad-nafis-putra.pdf" download>Unduh CV (PDF)</a>
+    <a href="assets/cv-muhammad-nafis-putra.pdf" download>Unduh CV (PDF) ↓</a>
   </div>
 </footer>
 

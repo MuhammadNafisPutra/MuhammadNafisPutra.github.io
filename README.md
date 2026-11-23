@@ -11,12 +11,12 @@ instalasi atau build. Buka `index.html` di browser untuk melihatnya.
 
 ## Mengubah konten
 
-Semua teks ada di `index.html`, dikelompokkan per bagian (HERO, KARYA, LAINNYA, TENTANG, dst.).
-Warna diatur di bagian atas `style.css` (`--wine`, `--brass`, `--paper`, dll.).
+Semua teks ada di `index.html`, dikelompokkan per bagian (HERO, INDEX, CASES, LAINNYA, TENTANG, RUNDOWN, SERTIFIKAT, KONTAK).
+Warna dan huruf diatur di bagian atas `style.css` (`--wine`, `--crimson`, `--gold`, `--display`, dll.).
 
-Menambah proyek kecil: salin satu blok `<li class="card">` di bagian LAINNYA.
-Menambah proyek utama: salin satu blok `<article class="work">`; tambahkan kelas `work--flip`
-agar gambarnya berada di sisi kanan.
+Menambah proyek utama: salin satu blok `<article class="case ...">` dan tambahkan barisnya di daftar
+`<ol class="plist">` (atribut `data-peek` berisi gambar yang muncul saat kursor diarahkan).
+Warna latar tiap proyek dipilih lewat kelas `case--wine`, `case--crimson`, `case--cream`, `case--blush`, atau `case--ink`.
 
 ## Menerbitkan gratis lewat GitHub Pages
 
