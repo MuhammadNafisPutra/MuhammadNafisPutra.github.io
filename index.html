@@ -47,7 +47,7 @@
           <span class="line"><span><em>Nafis</em> Putra</span></span>
         </h1>
         <p class="hero__lede">
-          Mahasiswa Teknologi Informasi di Universitas Lambung Mangkurat. Saya membangun aplikasi
+          Mahasiswa semester 5 Teknologi Informasi di Universitas Lambung Mangkurat. Saya membangun aplikasi
           Android, web, dan desktop, mengolah data menjadi dashboard yang bisa dibaca, dan di luar
           kelas mengurus acara dari konsep sampai hari pelaksanaan.
         </p>
@@ -63,19 +63,13 @@
     <div class="wrap">
       <dl class="facts">
         <div><dt>Kampus</dt><dd>Universitas Lambung Mangkurat</dd></div>
-        <div><dt>IPK</dt><dd><b data-count="3.80">3,80</b> <span>/ 4,00</span></dd></div>
-        <div><dt>Domisili</dt><dd>Banjarmasin, Kalimantan Selatan</dd></div>
+        <div><dt>IPK</dt><dd><b data-count="3.84">3,84</b> <span>/ 4,00</span></dd></div>
+        <div><dt>Semester</dt><dd>5 <span>· angkatan 2024</span></dd></div>
         <div><dt>Status</dt><dd><i class="dot" aria-hidden="true"></i>Terbuka untuk magang</dd></div>
       </dl>
     </div>
   </section>
 
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker__track">
-      <span>Kotlin</span><span>Jetpack Compose</span><span>Java</span><span>Laravel</span><span>Python</span><span>Streamlit</span><span>Apache Airflow</span><span>PostgreSQL</span><span>Tableau</span><span>Docker</span><span>Figma</span><span>Manajemen acara</span>
-      <span>Kotlin</span><span>Jetpack Compose</span><span>Java</span><span>Laravel</span><span>Python</span><span>Streamlit</span><span>Apache Airflow</span><span>PostgreSQL</span><span>Tableau</span><span>Docker</span><span>Figma</span><span>Manajemen acara</span>
-    </div>
-  </div>
 
   <!-- KARYA -->
   <section class="section" id="karya" aria-labelledby="karya-h">
@@ -132,19 +126,31 @@
       <!-- 03 FitZone -->
       <article class="work">
         <figure class="work__media work__media--screen">
-          <img src="assets/img/fitzone.webp" width="1200" height="804" loading="lazy" alt="Riwayat eksekusi DAG Apache Airflow pada pipeline FitZone">
+          <img src="assets/img/fitzone.webp" width="1440" height="920" loading="lazy" alt="Dashboard FitZone halaman Ringkasan Eksekutif: 973 member, rata-rata lemak tubuh 25 persen, dan grafik lemak tubuh menurut frekuensi latihan">
         </figure>
         <div class="work__meta">
           <p class="work__line"><span class="work__no">03</span> UAS Kecerdasan Bisnis · 2026</p>
-          <h3 class="work__title">Pipeline Data FitZone</h3>
+          <h3 class="work__title">Pipeline &amp; Data Warehouse FitZone</h3>
           <p class="work__desc">
-            Pipeline lengkap untuk jaringan gym fiktif: data member harian dan data WHO lewat API masuk
-            ke data lake, dicek kualitasnya, lalu disusun menjadi data warehouse <em>star schema</em>
-            dan data mart. Semuanya dijadwalkan dengan Airflow dan dilengkapi model prediksi.
+            Sistem BI untuk jaringan gym fiktif PT FitZone Nusantara. Dashboard Streamlit menjawab
+            pertanyaan bisnis seperti siapa member yang paling berisiko berhenti, dengan enam halaman:
+            ringkasan, retensi, program, benchmark WHO, prediksi lemak tubuh, dan kualitas data.
           </p>
-          <ul class="tags"><li>Python</li><li>Apache Airflow</li><li>PostgreSQL</li><li>Docker</li><li>scikit-learn</li></ul>
+          <details class="dw">
+            <summary>Cara saya membangun data warehouse-nya</summary>
+            <ol>
+              <li><b>Sumber.</b> CSV kebiasaan latihan member (harian) dan WHO Global Health Observatory API (bulanan).</li>
+              <li><b>Data lake.</b> File asli disimpan di <em>raw zone</em> lengkap dengan checksum dan manifest, lalu hasil bersihnya di <em>curated zone</em> sebagai parquet.</li>
+              <li><b>Staging &amp; quality gate.</b> Data dimuat ke schema staging dan dicek dengan 16 aturan; batch berhenti bila baris ditolak lebih dari 5%, dan semua penolakan dicatat.</li>
+              <li><b>Star schema.</b> 7 dimensi (member, gender, jenis latihan, level, kategori BMI, negara, indikator) dan 3 fakta (sesi latihan, pengukuran tubuh, benchmark WHO) di PostgreSQL, dimuat dalam satu transaksi beserta rekonsiliasi jumlah baris.</li>
+              <li><b>Data mart.</b> <em>View</em> dan <em>materialized view</em> per kebutuhan bisnis, menjadi sumber dashboard.</li>
+              <li><b>Otomasi.</b> Tiga DAG Airflow (member harian, WHO bulanan, backup), log audit per tahap, dan model Random Forest untuk memprediksi lemak tubuh.</li>
+            </ol>
+          </details>
+          <ul class="tags"><li>Python</li><li>Apache Airflow</li><li>PostgreSQL</li><li>Streamlit</li><li>Docker</li><li>scikit-learn</li></ul>
           <div class="work__links">
             <a class="pill" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis" target="_blank" rel="noopener">Lihat kode</a>
+            <a class="pill" href="https://github.com/MuhammadNafisPutra/KecerdasanBisnis/blob/main/docs/gambar/e24_star_schema.png" target="_blank" rel="noopener">Star schema</a>
           </div>
         </div>
       </article>
@@ -246,7 +252,7 @@
       </div>
       <div class="about__body">
         <p>
-          Saya kuliah di Teknologi Informasi ULM sejak 2024. Proyek kuliah membawa saya dari Java
+          Saat ini saya menjalani semester 5 di Teknologi Informasi ULM. Proyek kuliah membawa saya dari Java
           desktop ke Android dengan Kotlin, lalu ke web dengan Laravel, dan sekarang banyak ke
           pengolahan data. Tahun ini saya juga mengikuti pelatihan jaringan dan keamanan siber
           lewat Digital Talent Scholarship.
@@ -296,7 +302,7 @@
         <li>
           <p class="timeline__when">Agu 2024 – sekarang</p>
           <h3>S1 Teknologi Informasi</h3>
-          <p class="timeline__where">Universitas Lambung Mangkurat · IPK 3,80</p>
+          <p class="timeline__where">Universitas Lambung Mangkurat · IPK 3,84 · semester 5</p>
         </li>
         <li>
           <p class="timeline__when">2021 – 2024</p>
