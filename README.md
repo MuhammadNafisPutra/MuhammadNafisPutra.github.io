@@ -16,7 +16,7 @@ Warna dan huruf diatur di bagian atas `style.css` (`--wine`, `--crimson`, `--gol
 
 Menambah proyek utama: salin satu blok `<article class="case ...">` dan tambahkan barisnya di daftar
 `<ol class="plist">` (atribut `data-peek` berisi gambar yang muncul saat kursor diarahkan).
-Warna latar tiap proyek dipilih lewat kelas `case--wine`, `case--crimson`, `case--cream`, `case--blush`, atau `case--ink`.
+Semua proyek memakai gaya yang sama; cukup ganti teks, gambar, dan link-nya.
 
 ## Menerbitkan gratis lewat GitHub Pages
 
