@@ -11,7 +11,7 @@ instalasi atau build. Buka `index.html` di browser untuk melihatnya.
 
 ## Mengubah konten
 
-Semua teks ada di `index.html`, dikelompokkan per bagian (HERO, KARYA, TENTANG, RUNDOWN, SERTIFIKAT, KONTAK).
+Semua teks ada di `index.html`, dikelompokkan per bagian (HERO, PROJECT, PENGALAMAN, SERTIFIKAT, KONTAK).
 Warna dan huruf diatur di bagian atas `style.css` (`--wine`, `--crimson`, `--gold`, `--display`, dll.).
 
 Menambah proyek: salin satu blok `<li class="proj ...">` di dalam `<ul class="grid">`.

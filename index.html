@@ -18,16 +18,17 @@
 </head>
 <body>
 
+<div class="orbs" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
 <div class="progress" aria-hidden="true"></div>
-<a class="skip" href="#karya">Langsung ke karya</a>
+<a class="skip" href="#project">Langsung ke project</a>
 
 <header class="top" id="top">
   <div class="wrap top__inner">
     <a class="logo" href="#top" aria-label="Kembali ke atas"><b>NP</b><span>Nafis Putra</span></a>
     <nav class="nav" id="nav" aria-label="Navigasi utama">
-      <a href="#karya">Karya</a>
-      <a href="#tentang">Tentang</a>
-      <a href="#rundown">Rundown</a>
+      <a href="#project">Project</a>
+      <a href="#pengalaman">Pengalaman</a>
       <a href="#sertifikat">Sertifikat</a>
       <a href="#kontak" class="nav__cta">Kontak</a>
     </nav>
@@ -40,38 +41,27 @@
   <!-- ============ HERO / PROFIL ============ -->
   <section class="cover">
     <div class="wrap">
-      <div class="cover__strip">
-        <span>Portofolio Muhammad Nafis Putra</span>
-        <span class="cover__place"><i class="dot dot--small" aria-hidden="true"></i>Banjarmasin, <time id="clock">pukul --.--</time> WITA</span>
-      </div>
 
       <div class="cover__grid">
         <div class="cover__intro">
           <p class="cover__first">Halo, saya Muhammad</p>
-          <h1 class="masthead" aria-label="Nafis Putra">
-            <span class="line"><span>Nafis</span></span>
-            <span class="line"><span class="grad">Putra.</span></span>
+          <h1 class="masthead">
+            <span class="line"><span class="grad">Nafis</span></span>
           </h1>
 
           <p class="cover__role">
-            <span class="sr">Saya membangun aplikasi Android, dashboard data, dan situs web, serta mengurus acara yang tepat waktu.</span>
-            <span aria-hidden="true">Saya membangun</span>
-            <span class="rotator grad" aria-hidden="true">
-              <span class="rotator__word is-on">aplikasi Android</span>
-              <span class="rotator__word">dashboard data</span>
-              <span class="rotator__word">situs web</span>
-              <span class="rotator__word">acara yang tepat waktu</span>
-            </span>
+            Saya membangun <b>aplikasi Android</b>, <b>situs web</b>, dan <b>dashboard data</b>,
+            serta mengurus <b>acara</b> dari konsep sampai hari-H.
           </p>
 
           <p class="cover__lede">
             Mahasiswa semester 5 Teknologi Informasi di Universitas Lambung Mangkurat dengan IPK 3,84.
             Terbiasa bekerja dari kode Kotlin dan Laravel sampai pipeline data, dan di luar kelas
-            memastikan acara berjalan sesuai <em>rundown</em>.
+            memastikan acara berjalan sesuai rencana.
           </p>
 
           <div class="cover__actions">
-            <a class="btn btn--gold" href="#karya"><span>Lihat karya</span><b aria-hidden="true">↓</b></a>
+            <a class="btn btn--gold" href="#karya"><span>Lihat project</span><b aria-hidden="true">↓</b></a>
             <a class="btn btn--line" href="assets/cv-muhammad-nafis-putra.pdf" download><span>Unduh CV</span><b aria-hidden="true">↗</b></a>
           </div>
 
@@ -101,21 +91,21 @@
       <dl class="stats">
         <div><dt>IPK dari 4,00</dt><dd>3,84</dd></div>
         <div><dt>Semester berjalan</dt><dd>5</dd></div>
-        <div><dt>Proyek di halaman ini</dt><dd>8</dd></div>
+        <div><dt>Project di halaman ini</dt><dd>8</dd></div>
         <div><dt>Sertifikat</dt><dd>5</dd></div>
       </dl>
     </div>
   </section>
 
-  <!-- ============ KARYA (semua proyek dalam satu grid) ============ -->
-  <section class="work" id="karya" aria-labelledby="karya-h">
+  <!-- ============ PROJECT (semua dalam satu grid) ============ -->
+  <section class="work" id="project" aria-labelledby="project-h">
     <div class="wrap">
       <header class="head">
-        <h2 id="karya-h" class="head__title">Karya</h2>
-        <p class="head__note">Delapan proyek dari aplikasi, data, web, sampai desain UI. Pilih kategori untuk menyaring.</p>
+        <h2 id="project-h" class="head__title">Project</h2>
+        <p class="head__note">Delapan project dari aplikasi, data, web, sampai desain UI. Pilih kategori untuk menyaring.</p>
       </header>
 
-      <div class="filters" role="group" aria-label="Saring proyek">
+      <div class="filters" role="group" aria-label="Saring project">
         <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">Semua <sup>8</sup></button>
         <button type="button" class="filter" data-filter="app" aria-pressed="false">Aplikasi <sup>2</sup></button>
         <button type="button" class="filter" data-filter="data" aria-pressed="false">Data <sup>2</sup></button>
@@ -257,31 +247,16 @@
     </div>
   </section>
 
-  <!-- ============ TENTANG ============ -->
-  <section class="about" id="tentang" aria-labelledby="tentang-h">
-    <div class="wrap">
-      <h2 id="tentang-h" class="sr">Tentang</h2>
-      <p class="about__big">
-        Kode yang rapi, <span>acara yang tepat waktu.</span> Dua-duanya soal memastikan semua berjalan sesuai rencana.
-      </p>
-      <div class="about__cols">
-        <p>Saat ini saya menjalani semester 5 di Teknologi Informasi ULM. Proyek kuliah membawa saya dari Java desktop ke Android dengan Kotlin, lalu ke web dengan Laravel, dan sekarang banyak ke data. Tahun ini saya juga ikut pelatihan jaringan dan keamanan siber lewat Digital Talent Scholarship.</p>
-        <p>Untuk aplikasi, saya menulis Kotlin dengan Jetpack Compose, Room, Retrofit, dan Firebase; Java dengan JavaFX dan MySQL; serta PHP dengan Laravel, Tailwind CSS, dan Bootstrap. Untuk data, saya memakai Python (pandas, NumPy, Plotly, seaborn, scikit-learn), Streamlit, Apache Airflow, PostgreSQL, Docker, dan Tableau.</p>
-        <p>Sehari-hari saya bekerja dengan Git dan GitHub, Android Studio, IntelliJ IDEA, VS Code, dan Figma. Di luar kode, saya bekerja lepas sebagai <em>event</em> dan <em>wedding organizer</em> dan menulis skrip MC untuk acara himpunan, jadi terbiasa dengan tenggat dan rencana yang berubah di menit terakhir.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ RUNDOWN ============ -->
-  <section class="rundown" id="rundown" aria-labelledby="rundown-h">
+  <!-- ============ PENGALAMAN ============ -->
+  <section class="rundown" id="pengalaman" aria-labelledby="pengalaman-h">
     <div class="wrap">
       <header class="head">
-        <h2 id="rundown-h" class="head__title">Rundown</h2>
-        <p class="head__note">Perjalanan saya, ditulis seperti susunan acara.</p>
+        <h2 id="pengalaman-h" class="head__title">Pengalaman</h2>
+        <p class="head__note">Kerja, organisasi, dan pendidikan.</p>
       </header>
-      <div class="sheet" role="table" aria-label="Rundown perjalanan">
+      <div class="sheet" role="table" aria-label="Pengalaman">
         <div class="sheet__row sheet__row--head" role="row">
-          <span role="columnheader">Waktu</span><span role="columnheader">Kegiatan</span><span role="columnheader">Keterangan</span>
+          <span role="columnheader">Waktu</span><span role="columnheader">Peran</span><span role="columnheader">Keterangan</span>
         </div>
         <div class="sheet__row" role="row">
           <span role="cell" class="mono">Jun 2024 – kini</span>
@@ -312,24 +287,39 @@
     <div class="wrap">
       <header class="head head--light">
         <h2 id="sertifikat-h" class="head__title">Sertifikat</h2>
-        <p class="head__note">Klik tiket untuk membuka sertifikat aslinya.</p>
+        <p class="head__note">Klik sertifikat untuk membuka PDF aslinya.</p>
       </header>
-      <ul class="tickets">
-        <li><a class="ticket" href="assets/sertifikat/dts-cybersecurity-ai-google.pdf" target="_blank" rel="noopener">
-          <span class="ticket__main"><span class="mono">Digital Talent Scholarship · Komdigi</span><b>Intermediate Cybersecurity + AI Essentials · Google</b></span>
-          <span class="ticket__stub"><b>108</b><span class="mono">jam · Jun 2026</span></span></a></li>
-        <li><a class="ticket" href="assets/sertifikat/dts-intermediate-network-admin.pdf" target="_blank" rel="noopener">
-          <span class="ticket__main"><span class="mono">Digital Talent Scholarship · Komdigi</span><b>Intermediate Associate Network Administrator</b></span>
-          <span class="ticket__stub"><b>12</b><span class="mono">jam · Jun 2026</span></span></a></li>
-        <li><a class="ticket" href="assets/sertifikat/dts-fundamental-network-admin.pdf" target="_blank" rel="noopener">
-          <span class="ticket__main"><span class="mono">Digital Talent Scholarship · Komdigi</span><b>Fundamental of Associate Network Administrator</b></span>
-          <span class="ticket__stub"><b>12</b><span class="mono">jam · Jun 2026</span></span></a></li>
-        <li><a class="ticket" href="assets/sertifikat/workshop-cybersecurity-ulm.pdf" target="_blank" rel="noopener">
-          <span class="ticket__main"><span class="mono">Prodi Teknologi Informasi ULM</span><b>Workshop Cybersecurity</b></span>
-          <span class="ticket__stub"><b>NOV</b><span class="mono">2025</span></span></a></li>
-        <li><a class="ticket" href="assets/sertifikat/penghargaan-hmti.pdf" target="_blank" rel="noopener">
-          <span class="ticket__main"><span class="mono">HMTI Fakultas Teknik ULM</span><b>Penghargaan Pengurus, Divisi Minat dan Bakat</b></span>
-          <span class="ticket__stub"><b>MAR</b><span class="mono">2026</span></span></a></li>
+      <ul class="certgrid">
+        <li class="cert cert--wide">
+          <a href="assets/sertifikat/dts-cybersecurity-ai-google.pdf" target="_blank" rel="noopener">
+            <span class="cert__img"><img src="assets/img/sertifikat/dts-cybersecurity-ai-google.webp" width="1200" height="848" loading="lazy" alt="Sertifikat Intermediate Cybersecurity + AI Essentials · Google"></span>
+            <span class="cert__body"><b>Intermediate Cybersecurity + AI Essentials · Google</b><small>Digital Talent Scholarship, Komdigi</small><em>Jun 2026 · 108 jam</em></span>
+          </a>
+        </li>
+        <li class="cert cert--wide">
+          <a href="assets/sertifikat/penghargaan-hmti.pdf" target="_blank" rel="noopener">
+            <span class="cert__img"><img src="assets/img/sertifikat/penghargaan-hmti.webp" width="1200" height="848" loading="lazy" alt="Sertifikat Penghargaan Pengurus, Divisi Minat dan Bakat"></span>
+            <span class="cert__body"><b>Penghargaan Pengurus, Divisi Minat dan Bakat</b><small>HMTI Fakultas Teknik ULM</small><em>Mar 2026</em></span>
+          </a>
+        </li>
+        <li class="cert">
+          <a href="assets/sertifikat/dts-intermediate-network-admin.pdf" target="_blank" rel="noopener">
+            <span class="cert__img"><img src="assets/img/sertifikat/dts-intermediate-network-admin.webp" width="1200" height="848" loading="lazy" alt="Sertifikat Intermediate Associate Network Administrator"></span>
+            <span class="cert__body"><b>Intermediate Associate Network Administrator</b><small>Digital Talent Scholarship, Komdigi</small><em>Jun 2026 · 12 jam</em></span>
+          </a>
+        </li>
+        <li class="cert">
+          <a href="assets/sertifikat/dts-fundamental-network-admin.pdf" target="_blank" rel="noopener">
+            <span class="cert__img"><img src="assets/img/sertifikat/dts-fundamental-network-admin.webp" width="1200" height="848" loading="lazy" alt="Sertifikat Fundamental of Associate Network Administrator"></span>
+            <span class="cert__body"><b>Fundamental of Associate Network Administrator</b><small>Digital Talent Scholarship, Komdigi</small><em>Jun 2026 · 12 jam</em></span>
+          </a>
+        </li>
+        <li class="cert">
+          <a href="assets/sertifikat/workshop-cybersecurity-ulm.pdf" target="_blank" rel="noopener">
+            <span class="cert__img"><img src="assets/img/sertifikat/workshop-cybersecurity-ulm.webp" width="1200" height="848" loading="lazy" alt="Sertifikat Workshop Cybersecurity"></span>
+            <span class="cert__body"><b>Workshop Cybersecurity</b><small>Program Studi Teknologi Informasi ULM</small><em>Nov 2025</em></span>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
