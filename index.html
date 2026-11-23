@@ -81,10 +81,6 @@
           <div class="cover__frame">
             <img src="assets/img/foto.webp" width="640" height="640" alt="Foto Muhammad Nafis Putra">
           </div>
-          <figcaption class="cover__card">
-            <i class="dot" aria-hidden="true"></i>
-            <span><b>Terbuka untuk magang</b><small>Semester 5 · Teknologi Informasi ULM</small></span>
-          </figcaption>
         </figure>
       </div>
 
@@ -163,8 +159,8 @@
               <summary>Cara saya membangun data warehouse-nya</summary>
               <ol>
                 <li><b>Sumber.</b> CSV latihan member (harian) dan WHO Global Health Observatory API (bulanan).</li>
-                <li><b>Data lake.</b> File asli di <em>raw zone</em> dengan checksum; hasil bersih di <em>curated zone</em> sebagai parquet.</li>
-                <li><b>Quality gate.</b> 16 aturan validasi; batch berhenti bila lebih dari 5% baris ditolak.</li>
+                <li><b>Data lake.</b> File asli di <em>raw zone</em> dengan checksum, lalu hasil bersihnya di <em>curated zone</em> sebagai parquet.</li>
+                <li><b>Quality gate.</b> 16 aturan validasi. Batch berhenti bila lebih dari 5% baris ditolak.</li>
                 <li><b>Star schema.</b> 7 dimensi dan 3 fakta di PostgreSQL, dimuat dalam satu transaksi dengan rekonsiliasi.</li>
                 <li><b>Data mart.</b> <em>View</em> dan <em>materialized view</em> sebagai sumber dashboard.</li>
                 <li><b>Otomasi.</b> Tiga DAG Airflow, log audit, backup, dan model Random Forest.</li>
@@ -254,31 +250,54 @@
         <h2 id="pengalaman-h" class="head__title">Pengalaman</h2>
         <p class="head__note">Kerja, organisasi, dan pendidikan.</p>
       </header>
-      <div class="sheet" role="table" aria-label="Pengalaman">
-        <div class="sheet__row sheet__row--head" role="row">
-          <span role="columnheader">Waktu</span><span role="columnheader">Peran</span><span role="columnheader">Keterangan</span>
-        </div>
-        <div class="sheet__row" role="row">
-          <span role="cell" class="mono">Jun 2024 – kini</span>
-          <span role="cell"><b>Freelance Event &amp; Wedding Organizer</b><small>CV. Glowing Banjarmasin Group</small></span>
-          <span role="cell">Predikat MVP untuk konten pernikahan; tiga acara sukses dalam satu bulan; menangani perlengkapan acara bersama Glowing Project.</span>
-        </div>
-        <div class="sheet__row" role="row">
-          <span role="cell" class="mono">Mar – Des 2025</span>
-          <span role="cell"><b>Anggota Divisi Minat dan Bakat</b><small>HMTI Universitas Lambung Mangkurat</small></span>
-          <span role="cell">Koordinator acara Sapa Teknik; panitia PKKMB dan LKMM-PD Prodi TI 2025; penanggung jawab futsal himpunan.</span>
-        </div>
-        <div class="sheet__row" role="row">
-          <span role="cell" class="mono">Agu 2024 – kini</span>
-          <span role="cell"><b>S1 Teknologi Informasi</b><small>Universitas Lambung Mangkurat</small></span>
-          <span role="cell">Semester 5, IPK 3,84.</span>
-        </div>
-        <div class="sheet__row" role="row">
-          <span role="cell" class="mono">2021 – 2024</span>
-          <span role="cell"><b>MAN 2 Banjarmasin</b><small>Nilai rata-rata 89</small></span>
-          <span role="cell">Juara 3 Kejuaraan Futsal U-17 Kalimantan Selatan, Borneo Cup, dan Polanka Cup.</span>
-        </div>
-      </div>
+      <ol class="journey">
+        <li class="step">
+          <div class="step__when"><span class="step__kind">Kerja</span><time>Jun 2024 – sekarang</time></div>
+          <article class="step__card">
+            <h3>Freelance Event &amp; Wedding Organizer</h3>
+            <p class="step__org">CV. Glowing Banjarmasin Group</p>
+            <ul class="step__points">
+              <li>Meraih predikat <b>MVP</b> untuk pembuatan konten pernikahan.</li>
+              <li>Menyelenggarakan <b>tiga acara</b> dengan sukses dalam satu bulan.</li>
+              <li>Menangani perlengkapan pendukung acara bersama Glowing Project.</li>
+            </ul>
+          </article>
+        </li>
+        <li class="step">
+          <div class="step__when"><span class="step__kind">Organisasi</span><time>Mar – Des 2025</time></div>
+          <article class="step__card">
+            <h3>Anggota Divisi Minat dan Bakat</h3>
+            <p class="step__org">Himpunan Mahasiswa Teknologi Informasi ULM</p>
+            <ul class="step__points">
+              <li>Koordinator acara <b>Sapa Teknik</b>.</li>
+              <li>Panitia PKKMB dan LKMM-PD Program Studi Teknologi Informasi 2025.</li>
+              <li>Penanggung jawab kegiatan futsal himpunan.</li>
+            </ul>
+          </article>
+        </li>
+        <li class="step">
+          <div class="step__when"><span class="step__kind">Pendidikan</span><time>Agu 2024 – sekarang</time></div>
+          <article class="step__card">
+            <h3>S1 Teknologi Informasi</h3>
+            <p class="step__org">Universitas Lambung Mangkurat</p>
+            <ul class="step__badges">
+              <li><b>3,84</b> IPK</li>
+              <li><b>5</b> semester berjalan</li>
+            </ul>
+          </article>
+        </li>
+        <li class="step">
+          <div class="step__when"><span class="step__kind">Pendidikan</span><time>2021 – 2024</time></div>
+          <article class="step__card">
+            <h3>MAN 2 Banjarmasin</h3>
+            <p class="step__org">Nilai rata-rata 89</p>
+            <ul class="step__points">
+              <li>Juara 3 Kejuaraan Futsal U-17 Kalimantan Selatan.</li>
+              <li>Juara 3 Turnamen Futsal Borneo Cup dan Polanka Cup.</li>
+            </ul>
+          </article>
+        </li>
+      </ol>
     </div>
   </section>
 

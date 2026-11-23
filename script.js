@@ -69,7 +69,7 @@ if ('IntersectionObserver' in window) {
       });
     }, { rootMargin: '0px 0px -8% 0px' });
     $$('.head__title, .contact__title, .about__big').forEach((el) => io.observe(el));
-    $$('.head__note, .filters, .about__cols, .sheet, .tickets, .socials').forEach((el) => { el.classList.add('rv'); io.observe(el); });
+    $$('.head__note, .filters, .about__cols, .step, .certgrid, .socials').forEach((el) => { el.classList.add('rv'); io.observe(el); });
     $$('.proj').forEach((el, i) => {
       el.classList.add('rv');
       el.style.transitionDelay = `${(i % 3) * 90}ms`;
